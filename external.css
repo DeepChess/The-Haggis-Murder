@@ -1,15 +1,84 @@
 body {background-color: black; background-size: cover}
-h1 {color: white; text-shadow: 4px 4px 20px gold; font-size: 60px; text-align: center;}
+h1 {color: white; text-shadow: 4px 4px 20px gold; font-size: 70px; text-align: center;}
+h2 {color: white; font-size: 40px; text-align: center;}
 img.displayed {
-    display: block;
-    width: 400px; height: auto;
-    margin-left: auto;
-    margin-right: auto  }
-ol{
-      list-style: circle inside url('drawable/knife.png');
-      padding: 50px;
-      color: white;
-      font-size: 35px;
-      text-align: center;
+  display: block;
+  width: 400px; height: auto;
+  margin-left: auto;
+  margin-right: auto  }
+
+  img.man {
+    display: inline;
+    float: left;
+    margin-left: 450px;
+    width: 150px; height: auto;
+
+  }
+  img.woman {
+    display: inline;
+    float: right;
+    margin-right: 450px;
+    width: 150px; height: auto;
+  }
+
+  a.buttonMan {
+    display: inline-block;
+    float: left;
+    margin-left: 450px;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #FFFFFF;
+    background-color: #ffd700;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+
+  a.buttonMan:hover {background-color: #bfad36}
+  a.buttonMan:active {
+    background-color: #bfad36;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  a.buttonWoman {
+    display: inline-block;
+    float: right;
+    margin-right: 450px;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #FFFFFF;
+    background-color: #ffd700;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+
+  a.buttonWoman:hover {background-color: #bfad36}
+  a.buttonWoman:active {
+    background-color: #bfad36;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  ol{
+    list-style: circle inside url('drawable/knife.png');
+    padding: 50px;
+    color: white;
+    font-size: 35px;
+    text-align: center;
   }
   #link { color: #FFFFFF; }
+
+  img.crime_scene {
+    display: block;
+    width: 600px; height: auto;
+    margin-left: auto;
+    margin-right: auto  }
