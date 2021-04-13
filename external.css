@@ -1,27 +1,28 @@
 body {background-color: black; background-size: cover}
 h1 {color: white; text-shadow: 4px 4px 20px gold; font-size: 70px; text-align: center;}
 h2 {color: white; font-size: 40px; text-align: center;}
-img.displayed {
+
+.displayed {
   display: block;
   width: 400px; height: auto;
   margin-left: auto;
   margin-right: auto  }
 
-  img.man {
+  .man {
     display: inline;
     float: left;
     margin-left: 450px;
     width: 150px; height: auto;
 
   }
-  img.woman {
+  .woman {
     display: inline;
     float: right;
     margin-right: 450px;
     width: 150px; height: auto;
   }
 
-  a.buttonMan {
+  .buttonMan {
     display: inline-block;
     float: left;
     margin-left: 450px;
@@ -38,14 +39,14 @@ img.displayed {
     box-shadow: 0 9px #999;
   }
 
-  a.buttonMan:hover {background-color: #bfad36}
-  a.buttonMan:active {
+  .buttonMan:hover {background-color: #bfad36}
+  .buttonMan:active {
     background-color: #bfad36;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }
 
-  a.buttonWoman {
+  .buttonWoman {
     display: inline-block;
     float: right;
     margin-right: 450px;
@@ -62,8 +63,8 @@ img.displayed {
     box-shadow: 0 9px #999;
   }
 
-  a.buttonWoman:hover {background-color: #bfad36}
-  a.buttonWoman:active {
+  .buttonWoman:hover {background-color: #bfad36}
+  .buttonWoman:active {
     background-color: #bfad36;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
@@ -82,3 +83,60 @@ img.displayed {
     width: 600px; height: auto;
     margin-left: auto;
     margin-right: auto  }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .first { border-radius: 25px;
+      display: block;
+      border-style:dotted;
+      border-width: 4px;
+      width: 600px;
+      height: 80px;
+      padding: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      background: #ffd700;
+      overflow-y: scroll;
+    }
+
+      // Les lettres sont initialement décalées vers le bas et masquées. Puis elles remontent à leur position initiale tout en fadant.
+      @keyframes titleAnimation {
+        from {
+          transform: translate3d(0, 100%, 0);
+          opacity: 0;
+        }
+        to {
+          transform: translate3d(0, 0, 0);
+          opacity: 1;
+        }
+      }
+
+      button {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #FFFFFF;
+        background-color: #FF0000;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+      }
+
+      button:hover {background-color: #bfad36}
+      button:active {
+        background-color: #bfad36;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+      .buttonChoice1{float: left}
+      .buttonChoice2{float: right}
+      .buttonChoice11{float: left}
+      .buttonChoice12{float: right}
+      .buttonChoice21{float: left}
+      .buttonChoice22{float: right}
