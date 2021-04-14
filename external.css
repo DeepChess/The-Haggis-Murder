@@ -134,9 +134,6 @@ h2 {color: white; font-size: 40px; text-align: center;}
         box-shadow: 0 5px #666;
         transform: translateY(4px);
       }
+
       .buttonChoice1{float: left}
       .buttonChoice2{float: right}
-      .buttonChoice11{float: left}
-      .buttonChoice12{float: right}
-      .buttonChoice21{float: left}
-      .buttonChoice22{float: right}
