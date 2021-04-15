@@ -1,6 +1,49 @@
 body {background-color: black; background-size: cover}
+.top{display: inline-table; margin: 0 auto; width: 100%;}
 h1 {color: white; text-shadow: 4px 4px 20px gold; font-size: 70px; text-align: center;}
 h2 {color: white; font-size: 40px; text-align: center;}
+
+  .title, .progress{display: table-cell;}
+  .title1{margin-left: 280px;}
+  #file{float: right; }
+  progress {
+  border: none;
+  width: 200px;
+  height: 20px;
+  background: crimson;
+}
+progress{
+    display: inline-block;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    width: 300px;
+    height: 20px;
+    padding: 3px 3px 2px 3px;
+    background: #333;
+    background: -webkit-linear-gradient(#2d2d2d,#444);
+    background:    -moz-linear-gradient(#2d2d2d,#444);
+    background:      -o-linear-gradient(#2d2d2d,#444);
+    background:         linear-gradient(#2d2d2d,#444);
+    border: 1px solid rgba(0,0,0,.5);
+    border-radius: 15px;
+    box-shadow: 0 1px 0 rgba(255,255,255,.2);
+}
+
+progress {
+  color: lightblue;
+}
+
+progress::-webkit-progress-value {
+  background: red;
+}
+
+progress::-webkit-progress-value {
+  background: #ffd700;
+}
+
+progress::-webkit-progress-bar {
+  background: red;
+}
 
 .displayed {
   display: block;
