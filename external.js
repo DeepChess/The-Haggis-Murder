@@ -6,6 +6,8 @@ function toggle_text(choice1) {
     document.getElementById("buttonChoice2").style.display= "none";
     document.getElementById("buttonChoice11").style.display= "inline";
     document.getElementById("buttonChoice12").style.display= "inline";
+    document.getElementById("file").value="80";
+    document.getElementById("textProgress").innerHTML="80%";
   }
 }
 

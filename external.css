@@ -2,7 +2,7 @@ body {background-color: black; background-size: cover}
 .top{display: inline-table; margin: 0 auto; width: 100%;}
 h1 {color: white; text-shadow: 4px 4px 20px gold; font-size: 70px; text-align: center;}
 h2 {color: white; font-size: 40px; text-align: center;}
-
+.text-progress{color: white; text-align: right;;}
   .title, .progress{display: table-cell;}
   .title1{margin-left: 280px;}
   #file{float: right; }
@@ -10,10 +10,7 @@ h2 {color: white; font-size: 40px; text-align: center;}
   border: none;
   width: 200px;
   height: 20px;
-  background: crimson;
 }
-
-
 
 progress {
   color: lightblue;
