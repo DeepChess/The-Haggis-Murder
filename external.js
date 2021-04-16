@@ -8,6 +8,8 @@ function toggle_text(choice1) {
     document.getElementById("buttonChoice12").style.display= "inline";
     document.getElementById("file").value="80";
     document.getElementById("textProgress").innerHTML="80%";
+    document.getElementById("crime_scene").style.display="none";
+    document.getElementById("detective_man").style.display="block";
   }
 }
 

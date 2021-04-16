@@ -2,10 +2,11 @@ body {background-color: black; background-size: cover}
 .top{display: inline-table; margin: 0 auto; width: 100%;}
 h1 {color: white; text-shadow: 4px 4px 20px gold; font-size: 70px; text-align: center;}
 h2 {color: white; font-size: 40px; text-align: center;}
-.text-progress{color: white; text-align: right;;}
+.text-progress{color: white; text-align: right;}
   .title, .progress{display: table-cell;}
   .title1{margin-left: 280px;}
   #file{float: right; }
+
   progress {
   border: none;
   width: 200px;
@@ -102,13 +103,20 @@ progress::-webkit-progress-bar {
     font-size: 35px;
     text-align: center;
   }
-  #link { color: #FFFFFF; }
+  #link {color: #FFFFFF;}
 
-  img.crime_scene {
+img{margin-left: auto;
+margin-right: auto }
+
+  .crime_scene{
     display: block;
     width: 600px; height: auto;
-    margin-left: auto;
-    margin-right: auto  }
+     }
+
+  .detective_man{
+    width: 200px; height: auto;
+  }
+
 
     ::-webkit-scrollbar {
         display: none;
@@ -142,7 +150,7 @@ progress::-webkit-progress-bar {
       button {
         display: inline-block;
         padding: 15px 25px;
-        font-size: 24px;
+        font-size: 15px;
         cursor: pointer;
         text-align: center;
         text-decoration: none;
