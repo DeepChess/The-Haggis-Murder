@@ -20,11 +20,11 @@
   <div>
   <img class="crime_scene" id="crime_scene" src="drawable/crime_scene.jpg" alt="">
   <img class="detective_man" id="detective_man" style="display:none" src="drawable/detective_man.png" >
-  <img class="detective_woman" id="detective_woman" style="display:none" src="drawable/crime_scene.jpg" >
-  <img class="butcher" id="butcher" style="display:none" src="drawable/butcher.jpg" >
-  <img class="medical" id="medical" style="display:none" src="drawable/crime_scene.jpg" >
-  <img class="image6" id="image6" style="display:none" src="drawable/crime_scene.jpg" >
-  <img class="image7" id="image7" style="display:none" src="drawable/crime_scene.jpg" >
+  <img class="detective_woman" id="detective_woman" style="display:none" src="drawable/medical.png" >
+  <img class="butcher" id="butcher" style="display:none" src="drawable/butcher.png" >
+  <img class="medical" id="medical" style="display:none" src="drawable/medical.png" >
+  <img class="phone" id="phone" style="display:none" src="drawable/phone.png" >
+  <img class="car" id="car" style="display:none" src="drawable/car.png" >
   </div>
   <br>
   <div class="first">
@@ -38,15 +38,32 @@
   <br>
   <button style="display:inline;" class="buttonChoice1" id="buttonChoice1"type="button" onclick="toggle_text('choice1');">Interviewing the butcher and witnesses</button>
   <button style="display:inline;" class="buttonChoice2" id="buttonChoice2" type="button" onclick="toggle_text2('choice2');">Go to the medical examiner</button>
-  <span id="choice1" style="display:none;">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</span>
+  <span id="choice1" style="display:none;">John: Hello ! I am the commissioner in charge of the investigation.
+  Are you the person who discovered and reported the body?</span>
   <span id="choice2" style="display:none;">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</span>
 
-  <br><br><br>
+  <br><br>
 
-  <button style="display:none;" class="buttonChoice1" id="buttonChoice11" type="button" onclick="toggle_text11('choice11');">       11        </button>
-  <button style="display:none;" class="buttonChoice2" id="buttonChoice12" type="button" onclick="toggle_text12('choice12');">           12      </button>
-  <span id="choice11" style="display:none;">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</span>
-  <span id="choice12" style="display:none;">DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD</span>
+  <audio  id="audio1" loop><source  src="raw/vibreur.mp3" type="audio/mpeg"></audio >
+
+  <button style="display:none;" class="next" id="buttonNext1" onclick="toggle_text_next1('next1');" ><span>Next </span></button>
+  <span id="next1" style="display:none;">Butcher: Yes, I discovered the body when I was unloading the sheep carcasses that were delivered to me at around 5am. <br><br></span>
+
+  <button style="display:none;" class="next" id="buttonNext2" onclick="toggle_text_next2('next2');" ><span>Next </span></button>
+  <span id="next2" style="display:none;">John: Were there other people with you when you saw the body? Do you recognise the body?<br><br></span>
+
+  <button style="display:none;" class="next" id="buttonNext3" onclick="toggle_text_next3('next3'); setTimeout(timer1, 2000);" ><span>Next </span></button>
+  <span id="next3" style="display:none;">Butcher: No, I was alone and I do not recognise this body.<br><br></span>
+
+  <audio  id="audio2" loop><source  src="raw/flashing_light.mp3" type="audio/mpeg"></audio >
+
+  <button style="display:none;" class="buttonChoice1" id="buttonChoice11" type="button" onclick="toggle_text11('choice11');">Answer the phone</button>
+  <button style="display:none;" class="buttonChoice2" id="buttonChoice12" type="button" onclick="toggle_text12('choice12');">Do not answer the phone</button>
+  <span id="choice11" style="display:none;">Nora: Hey John! I have discovered several clues. Meet me at the morgue as soon as possible.<br><br></span>
+  <span id="choice12" style="display:none;">GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG</span>
+
+  <button style="display:none;" class="next" id="buttonNext4" onclick="toggle_text_next4('next4'); setTimeout(timer2, 15000);" ><span>Next </span></button>
+  <span id="next4" style="display:none;">John: Hi Nora, what did you find out?<br><br></span>
 
   <button style="display:none;" class="buttonChoice1" id="buttonChoice21" type="button" onclick="toggle_text21('choice21');">       21       </button>
   <button style="display:none;" class="buttonChoice2" id="buttonChoice22" type="button" onclick="toggle_text22('choice22');">        22       </button>

@@ -103,6 +103,7 @@ progress::-webkit-progress-bar {
     font-size: 35px;
     text-align: center;
   }
+
   #link {color: #FFFFFF;}
 
 img{margin-left: auto;
@@ -114,9 +115,24 @@ margin-right: auto }
      }
 
   .detective_man{
-    width: 200px; height: auto;
+    width: 300px; height: auto;
   }
 
+  .butcher{
+      width: 300px; height: auto;
+  }
+
+  .phone{
+      width: 300px; height: auto;
+  }
+
+  .car{
+      width: 300px; height: auto;
+  }
+
+  .medical{
+      width: 300px; height: auto;
+  }
 
     ::-webkit-scrollbar {
         display: none;
@@ -134,18 +150,6 @@ margin-right: auto }
       background: #ffd700;
       overflow-y: scroll;
     }
-
-      // Les lettres sont initialement décalées vers le bas et masquées. Puis elles remontent à leur position initiale tout en fadant.
-      @keyframes titleAnimation {
-        from {
-          transform: translate3d(0, 100%, 0);
-          opacity: 0;
-        }
-        to {
-          transform: translate3d(0, 0, 0);
-          opacity: 1;
-        }
-      }
 
       button {
         display: inline-block;
@@ -171,3 +175,60 @@ margin-right: auto }
 
       .buttonChoice1{float: left}
       .buttonChoice2{float: right}
+
+      .next {
+  display: inline-block;
+  float: right;
+  border-radius: 4px;
+  background-color: #FF0000;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 5px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.next span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.next span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.next:hover span {
+  padding-right: 25px;
+}
+
+.next:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+@-moz-keyframes spin {
+  100% { -moz-transform: rotate(-180deg); }
+}
+@-webkit-keyframes spin {
+  100% { -webkit-transform: rotate(-180deg); }
+}
+@keyframes spin {
+  100% { -webkit-transform: rotate(-360deg); transform: rotate(-360deg); }
+}
+
+.phone {
+  -webkit-animation: spin 1.5s linear infinite;
+  -moz-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}

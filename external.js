@@ -4,12 +4,12 @@ function toggle_text(choice1) {
     span.style.display = "inline";
     document.getElementById("buttonChoice1").style.display= "none";
     document.getElementById("buttonChoice2").style.display= "none";
-    document.getElementById("buttonChoice11").style.display= "inline";
-    document.getElementById("buttonChoice12").style.display= "inline";
     document.getElementById("file").value="80";
     document.getElementById("textProgress").innerHTML="80%";
     document.getElementById("crime_scene").style.display="none";
     document.getElementById("detective_man").style.display="block";
+    document.getElementById("buttonNext1").style.display= "inline";
+
   }
 }
 
@@ -30,8 +30,13 @@ function toggle_text11(choice11) {
     span.style.display = "inline";
     document.getElementById("buttonChoice11").style.display= "none";
     document.getElementById("buttonChoice12").style.display= "none";
-    document.getElementById("buttonChoice111").style.display= "inline";
-    document.getElementById("buttonChoice112").style.display= "inline";
+//    document.getElementById("buttonChoice111").style.display= "inline";
+  //  document.getElementById("buttonChoice112").style.display= "inline";
+    document.getElementById("phone").style.display="none";
+    document.getElementById("audio1").pause();
+    document.getElementById("medical").style.display="block";
+    document.getElementById("buttonNext4").style.display="inline";
+
   }
 }
 
@@ -333,4 +338,67 @@ function toggle_text2222(choice2222) {
   ///  document.getElementById("buttonChoice21").style.display= "inline";
   ///  document.getElementById("buttonChoice22").style.display= "inline";
   }
+}
+
+function toggle_text_next1(next1) {
+  var span = document.getElementById(next1);
+  if(span.style.display == "none") {
+    span.style.display = "inline";
+    document.getElementById("buttonNext1").style.display= "none";
+    document.getElementById("detective_man").style.display="none";
+    document.getElementById("butcher").style.display="block";
+    document.getElementById("buttonNext2").style.display= "inline";
+  }
+}
+
+function toggle_text_next2(next2) {
+  var span = document.getElementById(next2);
+  if(span.style.display == "none") {
+    span.style.display = "inline";
+    document.getElementById("buttonNext2").style.display= "none";
+    document.getElementById("butcher").style.display="none";
+    document.getElementById("detective_man").style.display="block";
+    document.getElementById("buttonNext3").style.display= "inline";
+  }
+}
+
+function toggle_text_next3(next3) {
+  var span = document.getElementById(next3);
+  if(span.style.display == "none") {
+    span.style.display = "inline";
+    document.getElementById("buttonNext3").style.display= "none";
+    document.getElementById("butcher").style.display="block";
+    document.getElementById("detective_man").style.display="none";
+  ///  document.getElementById("buttonChoice21").style.display= "inline";
+  ///  document.getElementById("buttonChoice22").style.display= "inline";
+  }
+}
+
+function toggle_text_next4(next4) {
+var span = document.getElementById(next4);
+  if(span.style.display == "none") {
+    document.getElementById("audio2").play();
+    document.getElementById("buttonNext4").style.display= "none";
+    document.getElementById("car").style.display="block";
+    document.getElementById("medical").style.display="none";
+  ///  document.getElementById("buttonChoice21").style.display= "inline";
+  ///  document.getElementById("buttonChoice22").style.display= "inline";
+  }
+}
+
+function timer1(){
+  document.getElementById("audio1").play();
+  document.getElementById("phone").style.display="block";
+  document.getElementById("butcher").style.display="none";
+  document.getElementById("buttonChoice11").style.display= "inline";
+  document.getElementById("buttonChoice12").style.display= "inline";
+}
+
+function timer2(){
+  document.getElementById("audio2").pause();
+  document.getElementById("detective_man").style.display="block";
+  document.getElementById("car").style.display="none";
+  document.getElementById("next4").style.display="inline"
+//  document.getElementById("buttonChoice11").style.display= "inline";
+//  document.getElementById("buttonChoice12").style.display= "inline";
 }
