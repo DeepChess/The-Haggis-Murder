@@ -138,6 +138,10 @@ margin-right: auto }
       width: 500px; height: auto;
   }
 
+  .sister{
+      width: 300px; height: auto;
+  }
+
     ::-webkit-scrollbar {
         display: none;
     }
