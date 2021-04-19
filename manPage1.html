@@ -25,6 +25,7 @@
   <img class="medical" id="medical" style="display:none" src="drawable/medical.png" >
   <img class="phone" id="phone" style="display:none" src="drawable/phone.png" >
   <img class="car" id="car" style="display:none" src="drawable/car.png" >
+  <img class="driver" id="driver" style="display:none" src="drawable/driver.png" >
   </div>
   <br>
   <div class="first">
@@ -47,13 +48,13 @@
   <audio  id="audio1" loop><source  src="raw/vibreur.mp3" type="audio/mpeg"></audio >
 
   <button style="display:none;" class="next" id="buttonNext1" onclick="toggle_text_next1('next1');" ><span>Next </span></button>
-  <span id="next1" style="display:none;">Butcher: Yes, I discovered the body when I was unloading the sheep carcasses that were delivered to me at around 5am. <br><br></span>
+  <span id="next1" style="display:none;">Logan: Yes, I discovered the body when I was unloading the sheep carcasses that were delivered to me at around 5am. <br><br></span>
 
   <button style="display:none;" class="next" id="buttonNext2" onclick="toggle_text_next2('next2');" ><span>Next </span></button>
   <span id="next2" style="display:none;">John: Were there other people with you when you saw the body? Do you recognise the body?<br><br></span>
 
   <button style="display:none;" class="next" id="buttonNext3" onclick="toggle_text_next3('next3'); setTimeout(timer1, 2000);" ><span>Next </span></button>
-  <span id="next3" style="display:none;">Butcher: No, I was alone and I do not recognise this body.<br><br></span>
+  <span id="next3" style="display:none;">Logan: No, I was alone and I do not recognise this body.<br><br></span>
 
   <audio  id="audio2" loop><source  src="raw/flashing_light.mp3" type="audio/mpeg"></audio >
 
@@ -62,20 +63,38 @@
   <span id="choice11" style="display:none;">Nora: Hey John! I have discovered several clues. Meet me at the morgue as soon as possible.<br><br></span>
   <span id="choice12" style="display:none;">GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG</span>
 
-  <button style="display:none;" class="next" id="buttonNext4" onclick="toggle_text_next4('next4'); setTimeout(timer2, 15000);" ><span>Next </span></button>
+  <button style="display:none;" class="next" id="buttonNext4" onclick="toggle_text_next4('next4'); setTimeout(timer2, 2000);" ><span>Next </span></button>
   <span id="next4" style="display:none;">John: Hi Nora, what did you find out?<br><br></span>
+
+  <button style="display:none;" class="next" id="buttonNext5" onclick="toggle_text_next5('next5');" ><span>Next </span></button>
+  <span id="next5" style="display:none;">Nora: He is a man between 40 and 50 years old and has been dead for 5-6 days.
+   The crime was bloody, there are signs of strangulation with a chain and I counted 12 stabs with a large blade.<br><br></span>
 
   <button style="display:none;" class="buttonChoice1" id="buttonChoice21" type="button" onclick="toggle_text21('choice21');">       21       </button>
   <button style="display:none;" class="buttonChoice2" id="buttonChoice22" type="button" onclick="toggle_text22('choice22');">        22       </button>
   <span id="choice21" style="display:none;">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</span>
   <span id="choice22" style="display:none;">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</span>
 
-  <br><br><br>
 
-  <button style="display:none;" class="buttonChoice1" id="buttonChoice111" type="button" onclick="toggle_text111('choice111');">     111         </button>
-  <button style="display:none;" class="buttonChoice2" id="buttonChoice112" type="button" onclick="toggle_text112('choice112');">      112        </button>
-  <span id="choice111" style="display:none;">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</span>
-  <span id="choice112" style="display:none;">DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD</span>
+  <button style="display:none;" class="buttonChoice1" id="buttonChoice111" type="button" onclick="toggle_text111('choice111');">Return to the butcher</button>
+  <button style="display:none;" class="buttonChoice2" id="buttonChoice112" type="button" onclick="toggle_text112('choice112');">Go to the truck driver</button>
+  <span id="choice111" style="display:none;">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</span>
+  <span id="choice112" style="display:none;">John: Thank you Nora for all this information,
+  I will go and question the driver of the truck that delivered the butcher. Bye. <br><br></span>
+
+  <button style="display:none;" class="next" id="buttonNext6" onclick="toggle_text_next6('next6'); setTimeout(timer3, 1000);" ><span>Next </span></button>
+  <span id="next6" style="display:none;">John: Hi, did you deliver the sheep carcasses and a body to Logan s butcher shop this morning?<br><br></span>
+
+  <button style="display:none;" class="next" id="buttonNext7" onclick="toggle_text_next7('next7');" ><span>Next </span></button>
+  <span id="next7" style="display:none;">Lewis: What? Whose body?<br><br></span>
+
+  <button style="display:none;" class="next" id="buttonNext8" onclick="toggle_text_next8('next8');" ><span>Next </span></button>
+  <span id="next8" style="display:none;">John: Yes, there was a dead body between the sheep carcasses you delivered to Logan this morning.<br><br></span>
+
+  <button style="display:none;" class="next" id="buttonNext9" onclick="toggle_text_next9('next9'); setTimeout(timer4, 2000);" ><span>Next </span></button>
+  <span id="next9" style="display:none;">Lewis: When I loaded and unloaded the sheep carcasses from the truck, there were 12 and 0 human bodies.<br><br></span>
+
+
 
   <button style="display:none;" class="buttonChoice1" id="buttonChoice121" type="button" onclick="toggle_text121('choice121');">        121     </button>
   <button style="display:none;" class="buttonChoice2" id="buttonChoice122" type="button" onclick="toggle_text122('choice122');">        122     </button>
@@ -99,8 +118,8 @@
   <span id="choice1111" style="display:none;">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</span>
   <span id="choice1112" style="display:none;">DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD</span>
 
-  <button style="display:none;" class="buttonChoice1" id="buttonChoice1121" type="button" onclick="toggle_text1121('choice1121');">          1121        </button>
-  <button style="display:none;" class="buttonChoice2" id="buttonChoice1122" type="button" onclick="toggle_text1122('choice1122');">          1122         </button>
+  <button style="display:none;" class="buttonChoice1" id="buttonChoice1121" type="button" onclick="toggle_text1121('choice1121');">Answer the phone</button>
+  <button style="display:none;" class="buttonChoice2" id="buttonChoice1122" type="button" onclick="toggle_text1122('choice1122');">Do not answer the phone</button>
   <span id="choice1121" style="display:none;">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</span>
   <span id="choice1122" style="display:none;">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</span>
 

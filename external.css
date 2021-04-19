@@ -134,6 +134,10 @@ margin-right: auto }
       width: 300px; height: auto;
   }
 
+  .driver{
+      width: 500px; height: auto;
+  }
+
     ::-webkit-scrollbar {
         display: none;
     }

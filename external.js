@@ -91,8 +91,14 @@ function toggle_text112(choice112) {
     span.style.display = "inline";
     document.getElementById("buttonChoice111").style.display= "none";
     document.getElementById("buttonChoice112").style.display= "none";
-    document.getElementById("buttonChoice1121").style.display= "inline";
-    document.getElementById("buttonChoice1122").style.display= "inline";
+    document.getElementById("detective_man").style.display="block";
+    document.getElementById("medical").style.display="none";
+    document.getElementById("buttonNext6").style.display="inline";
+  //  document.getElementById("buttonChoice1121").style.display= "inline";
+  //  document.getElementById("buttonChoice1122").style.display= "inline";
+
+
+
   }
 }
 
@@ -381,8 +387,65 @@ var span = document.getElementById(next4);
     document.getElementById("buttonNext4").style.display= "none";
     document.getElementById("car").style.display="block";
     document.getElementById("medical").style.display="none";
+
   ///  document.getElementById("buttonChoice21").style.display= "inline";
   ///  document.getElementById("buttonChoice22").style.display= "inline";
+  }
+}
+
+function toggle_text_next5(next5) {
+  var span = document.getElementById(next5);
+  if(span.style.display == "none") {
+    span.style.display = "inline";
+    document.getElementById("buttonNext5").style.display= "none";
+    document.getElementById("medical").style.display="block";
+    document.getElementById("detective_man").style.display="none";
+    document.getElementById("buttonChoice111").style.display= "inline";
+    document.getElementById("buttonChoice112").style.display= "inline";
+  }
+}
+
+function toggle_text_next6(next6) {
+  var span = document.getElementById(next6);
+  if(span.style.display == "none") {
+    document.getElementById("audio2").play();
+    document.getElementById("buttonNext6").style.display= "none";
+    document.getElementById("car").style.display="block";
+    document.getElementById("detective_man").style.display="none";
+  //  document.getElementById("buttonChoice111").style.display= "inline";
+  //  document.getElementById("buttonChoice112").style.display= "inline";
+  }
+}
+
+function toggle_text_next7(next7) {
+  var span = document.getElementById(next7);
+  if(span.style.display == "none") {
+    span.style.display = "inline";
+    document.getElementById("buttonNext7").style.display= "none";
+    document.getElementById("driver").style.display="block";
+    document.getElementById("detective_man").style.display="none";
+    document.getElementById("buttonNext8").style.display= "inline";
+  }
+}
+
+function toggle_text_next8(next8) {
+  var span = document.getElementById(next8);
+  if(span.style.display == "none") {
+    span.style.display = "inline";
+    document.getElementById("buttonNext8").style.display= "none";
+    document.getElementById("detective_man").style.display="block";
+    document.getElementById("driver").style.display="none";
+    document.getElementById("buttonNext9").style.display= "inline";
+  }
+}
+
+function toggle_text_next9(next9) {
+  var span = document.getElementById(next9);
+  if(span.style.display == "none") {
+    span.style.display = "inline";
+    document.getElementById("buttonNext9").style.display= "none";
+    document.getElementById("driver").style.display="block";
+    document.getElementById("detective_man").style.display="none";
   }
 }
 
@@ -399,6 +462,25 @@ function timer2(){
   document.getElementById("detective_man").style.display="block";
   document.getElementById("car").style.display="none";
   document.getElementById("next4").style.display="inline"
+  document.getElementById("buttonNext5").style.display= "inline";
 //  document.getElementById("buttonChoice11").style.display= "inline";
 //  document.getElementById("buttonChoice12").style.display= "inline";
+}
+
+function timer3(){
+  document.getElementById("audio2").pause();
+  document.getElementById("detective_man").style.display="block";
+  document.getElementById("car").style.display="none";
+  document.getElementById("next6").style.display="inline"
+  document.getElementById("buttonNext7").style.display= "inline";
+//  document.getElementById("buttonChoice11").style.display= "inline";
+//  document.getElementById("buttonChoice12").style.display= "inline";
+}
+
+function timer4(){
+  document.getElementById("audio1").play();
+  document.getElementById("phone").style.display="block";
+  document.getElementById("driver").style.display="none";
+  document.getElementById("buttonChoice1121").style.display= "inline";
+  document.getElementById("buttonChoice1122").style.display= "inline";
 }
