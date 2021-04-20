@@ -19,8 +19,18 @@ function toggle_text2(choice2) {
     span.style.display = "inline";
     document.getElementById("buttonChoice1").style.display= "none";
     document.getElementById("buttonChoice2").style.display= "none";
-    document.getElementById("buttonChoice21").style.display= "inline";
-    document.getElementById("buttonChoice22").style.display= "inline";
+    document.getElementById("audio2").play();
+    document.getElementById("car").style.display="block";
+    document.getElementById("suspect").style.display="none";
+    document.getElementById("win").style.display="none";
+    document.getElementById("detective_man").style.display="none";
+    document.getElementById("driver").style.display="none";
+    document.getElementById("sister").style.display="none";
+    document.getElementById("cartel").style.display="none";
+    document.getElementById("butcher").style.display="none";
+    document.getElementById("medical").style.display="none";
+    document.getElementById("phone").style.display="none";
+    document.getElementById("crime_scene").style.display="none";
   }
 }
 
@@ -48,17 +58,6 @@ function toggle_text12(choice12) {
     document.getElementById("buttonChoice12").style.display= "none";
     document.getElementById("buttonChoice121").style.display= "inline";
     document.getElementById("buttonChoice122").style.display= "inline";
-  }
-}
-
-function toggle_text21(choice21) {
-  var span = document.getElementById(choice21);
-  if(span.style.display == "none") {
-    span.style.display = "inline";
-    document.getElementById("buttonChoice21").style.display= "none";
-    document.getElementById("buttonChoice22").style.display= "none";
-    document.getElementById("buttonChoice211").style.display= "inline";
-    document.getElementById("buttonChoice212").style.display= "inline";
   }
 }
 
@@ -97,99 +96,9 @@ function toggle_text112(choice112) {
   //  document.getElementById("buttonChoice1121").style.display= "inline";
   //  document.getElementById("buttonChoice1122").style.display= "inline";
 
-
-
   }
 }
 
-function toggle_text121(choice121) {
-  var span = document.getElementById(choice121);
-  if(span.style.display == "none") {
-    span.style.display = "inline";
-    document.getElementById("buttonChoice121").style.display= "none";
-    document.getElementById("buttonChoice122").style.display= "none";
-    document.getElementById("buttonChoice1211").style.display= "inline";
-    document.getElementById("buttonChoice1212").style.display= "inline";
-  }
-}
-
-function toggle_text122(choice122) {
-  var span = document.getElementById(choice122);
-  if(span.style.display == "none") {
-    span.style.display = "inline";
-    document.getElementById("buttonChoice121").style.display= "none";
-    document.getElementById("buttonChoice122").style.display= "none";
-    document.getElementById("buttonChoice1221").style.display= "inline";
-    document.getElementById("buttonChoice1222").style.display= "inline";
-  }
-}
-
-function toggle_text211(choice211) {
-  var span = document.getElementById(choice211);
-  if(span.style.display == "none") {
-    span.style.display = "inline";
-    document.getElementById("buttonChoice211").style.display= "none";
-    document.getElementById("buttonChoice212").style.display= "none";
-    document.getElementById("buttonChoice2111").style.display= "inline";
-    document.getElementById("buttonChoice2112").style.display= "inline";
-  }
-}
-
-function toggle_text212(choice212) {
-  var span = document.getElementById(choice212);
-  if(span.style.display == "none") {
-    span.style.display = "inline";
-    document.getElementById("buttonChoice211").style.display= "none";
-    document.getElementById("buttonChoice212").style.display= "none";
-    document.getElementById("buttonChoice2121").style.display= "inline";
-    document.getElementById("buttonChoice2122").style.display= "inline";
-  }
-}
-
-function toggle_text221(choice221) {
-  var span = document.getElementById(choice221);
-  if(span.style.display == "none") {
-    span.style.display = "inline";
-    document.getElementById("buttonChoice221").style.display= "none";
-    document.getElementById("buttonChoice222").style.display= "none";
-    document.getElementById("buttonChoice2211").style.display= "inline";
-    document.getElementById("buttonChoice2212").style.display= "inline";
-  }
-}
-
-function toggle_text222(choice222) {
-  var span = document.getElementById(choice222);
-  if(span.style.display == "none") {
-    span.style.display = "inline";
-    document.getElementById("buttonChoice221").style.display= "none";
-    document.getElementById("buttonChoice222").style.display= "none";
-    document.getElementById("buttonChoice2221").style.display= "inline";
-    document.getElementById("buttonChoice2222").style.display= "inline";
-  }
-}
-
-
-function toggle_text1111(choice1111) {
-  var span = document.getElementById(choice1111);
-  if(span.style.display == "none") {
-    span.style.display = "inline";
-    document.getElementById("buttonChoice1111").style.display= "none";
-    document.getElementById("buttonChoice1112").style.display= "none";
-  ///  document.getElementById("buttonChoice11").style.display= "inline";
-  ///  document.getElementById("buttonChoice12").style.display= "inline";
-  }
-}
-
-function toggle_text12(choice1112) {
-  var span = document.getElementById(choice1112);
-  if(span.style.display == "none") {
-    span.style.display = "inline";
-    document.getElementById("buttonChoice1111").style.display= "none";
-    document.getElementById("buttonChoice1112").style.display= "none";
-  ///  document.getElementById("buttonChoice11").style.display= "inline";
-  ///  document.getElementById("buttonChoice12").style.display= "inline";
-  }
-}
 
 function toggle_text1121(choice1121) {
   var span = document.getElementById(choice1121);
@@ -217,138 +126,32 @@ function toggle_text1122(choice1122) {
   }
 }
 
-function toggle_text1211(choice1211) {
-  var span = document.getElementById(choice1211);
+function toggle_text11211(choice11211) {
+  var span = document.getElementById(choice11211);
   if(span.style.display == "none") {
-    span.style.display = "inline";
-    document.getElementById("buttonChoice1211").style.display= "none";
-    document.getElementById("buttonChoice1212").style.display= "none";
-  ///  document.getElementById("buttonChoice11").style.display= "inline";
-  ///  document.getElementById("buttonChoice12").style.display= "inline";
+    document.getElementById("audio2").play();
+    document.getElementById("car").style.display="block";
+    document.getElementById("sister").style.display="none";
+    document.getElementById("buttonChoice11211").style.display= "none";
+    document.getElementById("buttonChoice11212").style.display= "none";
   }
 }
 
-function toggle_text1212(choice1212) {
-  var span = document.getElementById(choice1212);
+function toggle_text11212(choice11212) {
+  var span = document.getElementById(choice11212);
   if(span.style.display == "none") {
-    span.style.display = "inline";
-    document.getElementById("buttonChoice1211").style.display= "none";
-    document.getElementById("buttonChoice1212").style.display= "none";
-  ///  document.getElementById("buttonChoice11").style.display= "inline";
-  ///  document.getElementById("buttonChoice12").style.display= "inline";
-  }
-}
+    document.getElementById("audio2").play();
+    document.getElementById("car").style.display="block";
+    document.getElementById("sister").style.display="none";
+    document.getElementById("buttonChoice11211").style.display= "none";
+    document.getElementById("buttonChoice11212").style.display= "none";
 
-function toggle_text1221(choice1221) {
-  var span = document.getElementById(choice1221);
-  if(span.style.display == "none") {
-    span.style.display = "inline";
-    document.getElementById("buttonChoice1221").style.display= "none";
-    document.getElementById("buttonChoice1222").style.display= "none";
-  ///  document.getElementById("buttonChoice21").style.display= "inline";
-  ///  document.getElementById("buttonChoice22").style.display= "inline";
-  }
-}
-
-function toggle_text1222(choice1222) {
-  var span = document.getElementById(choice1222);
-  if(span.style.display == "none") {
-    span.style.display = "inline";
-    document.getElementById("buttonChoice1221").style.display= "none";
-    document.getElementById("buttonChoice1222").style.display= "none";
   ///  document.getElementById("buttonChoice21").style.display= "inline";
   ///  document.getElementById("buttonChoice22").style.display= "inline";
   }
 }
 
 
-function toggle_text2111(choice2111) {
-  var span = document.getElementById(choice2111);
-  if(span.style.display == "none") {
-    span.style.display = "inline";
-    document.getElementById("buttonChoice2111").style.display= "none";
-    document.getElementById("buttonChoice2112").style.display= "none";
-  ///  document.getElementById("buttonChoice11").style.display= "inline";
-  ///  document.getElementById("buttonChoice12").style.display= "inline";
-  }
-}
-
-function toggle_text2112(choice2112) {
-  var span = document.getElementById(choice2112);
-  if(span.style.display == "none") {
-    span.style.display = "inline";
-    document.getElementById("buttonChoice2111").style.display= "none";
-    document.getElementById("buttonChoice2112").style.display= "none";
-  ///  document.getElementById("buttonChoice11").style.display= "inline";
-  ///  document.getElementById("buttonChoice12").style.display= "inline";
-  }
-}
-
-function toggle_text2121(choice2121) {
-  var span = document.getElementById(choice2121);
-  if(span.style.display == "none") {
-    span.style.display = "inline";
-    document.getElementById("buttonChoice2121").style.display= "none";
-    document.getElementById("buttonChoice2122").style.display= "none";
-  ///  document.getElementById("buttonChoice21").style.display= "inline";
-  ///  document.getElementById("buttonChoice22").style.display= "inline";
-  }
-}
-
-function toggle_text2122(choice2122) {
-  var span = document.getElementById(choice2122);
-  if(span.style.display == "none") {
-    span.style.display = "inline";
-    document.getElementById("buttonChoice2121").style.display= "none";
-    document.getElementById("buttonChoice2122").style.display= "none";
-  ///  document.getElementById("buttonChoice21").style.display= "inline";
-  ///  document.getElementById("buttonChoice22").style.display= "inline";
-  }
-}
-
-function toggle_text2211(choice2211) {
-  var span = document.getElementById(choice2211);
-  if(span.style.display == "none") {
-    span.style.display = "inline";
-    document.getElementById("buttonChoice2211").style.display= "none";
-    document.getElementById("buttonChoice2212").style.display= "none";
-  ///  document.getElementById("buttonChoice11").style.display= "inline";
-  ///  document.getElementById("buttonChoice12").style.display= "inline";
-  }
-}
-
-function toggle_text2212(choice2212) {
-  var span = document.getElementById(choice2212);
-  if(span.style.display == "none") {
-    span.style.display = "inline";
-    document.getElementById("buttonChoice2211").style.display= "none";
-    document.getElementById("buttonChoice2212").style.display= "none";
-  ///  document.getElementById("buttonChoice11").style.display= "inline";
-  ///  document.getElementById("buttonChoice12").style.display= "inline";
-  }
-}
-
-function toggle_text2221(choice2221) {
-  var span = document.getElementById(choice2221);
-  if(span.style.display == "none") {
-    span.style.display = "inline";
-    document.getElementById("buttonChoice2221").style.display= "none";
-    document.getElementById("buttonChoice2222").style.display= "none";
-  ///  document.getElementById("buttonChoice21").style.display= "inline";
-  ///  document.getElementById("buttonChoice22").style.display= "inline";
-  }
-}
-
-function toggle_text2222(choice2222) {
-  var span = document.getElementById(choice2222);
-  if(span.style.display == "none") {
-    span.style.display = "inline";
-    document.getElementById("buttonChoice2221").style.display= "none";
-    document.getElementById("buttonChoice2222").style.display= "none";
-  ///  document.getElementById("buttonChoice21").style.display= "inline";
-  ///  document.getElementById("buttonChoice22").style.display= "inline";
-  }
-}
 
 function toggle_text_next1(next1) {
   var span = document.getElementById(next1);
@@ -473,10 +276,131 @@ function toggle_text_next11(next11) {
     document.getElementById("buttonNext11").style.display= "none";
     document.getElementById("sister").style.display="block";
     document.getElementById("detective_man").style.display="none";
+    document.getElementById("buttonNext12").style.display= "block";
   ///  document.getElementById("buttonChoice21").style.display= "inline";
   ///  document.getElementById("buttonChoice22").style.display= "inline";
   }
 }
+
+function toggle_text_next12(next12) {
+  var span = document.getElementById(next12);
+  if(span.style.display == "none") {
+    span.style.display = "inline";
+    document.getElementById("buttonNext12").style.display= "none";
+    document.getElementById("sister").style.display="none";
+    document.getElementById("detective_man").style.display="block";
+    document.getElementById("buttonNext13").style.display= "block";
+  ///  document.getElementById("buttonChoice21").style.display= "inline";
+  ///  document.getElementById("buttonChoice22").style.display= "inline";
+  }
+}
+
+function toggle_text_next13(next13) {
+  var span = document.getElementById(next13);
+  if(span.style.display == "none") {
+    span.style.display = "inline";
+    document.getElementById("buttonNext13").style.display= "none";
+    document.getElementById("sister").style.display="block";
+    document.getElementById("detective_man").style.display="none";
+    document.getElementById("buttonNext14").style.display= "block";
+  ///  document.getElementById("buttonChoice21").style.display= "inline";
+  ///  document.getElementById("buttonChoice22").style.display= "inline";
+  }
+}
+
+function toggle_text_next14(next14) {
+  var span = document.getElementById(next14);
+  if(span.style.display == "none") {
+    span.style.display = "inline";
+    document.getElementById("buttonNext14").style.display= "none";
+    document.getElementById("sister").style.display="none";
+    document.getElementById("detective_man").style.display="block";
+    document.getElementById("buttonNext15").style.display= "block";
+  ///  document.getElementById("buttonChoice21").style.display= "inline";
+  ///  document.getElementById("buttonChoice22").style.display= "inline";
+  }
+}
+
+function toggle_text_next15(next15) {
+  var span = document.getElementById(next15);
+  if(span.style.display == "none") {
+    span.style.display = "inline";
+    document.getElementById("buttonNext15").style.display= "none";
+    document.getElementById("sister").style.display="block";
+    document.getElementById("detective_man").style.display="none";
+    document.getElementById("buttonChoice11211").style.display= "inline";
+    document.getElementById("buttonChoice11212").style.display= "inline";
+  }
+}
+
+function toggle_text_next16(next16) {
+  var span = document.getElementById(next16);
+  if(span.style.display == "none") {
+    span.style.display = "inline";
+    document.getElementById("buttonNext16").style.display= "none";
+    document.getElementById("cartel").style.display="block";
+    document.getElementById("detective_man").style.display="none";
+    document.getElementById("buttonNext17").style.display= "block";
+  ///  document.getElementById("buttonChoice21").style.display= "inline";
+  ///  document.getElementById("buttonChoice22").style.display= "inline";
+  }
+}
+
+function toggle_text_next17(next17) {
+  var span = document.getElementById(next17);
+  if(span.style.display == "none") {
+    span.style.display = "inline";
+    document.getElementById("buttonNext17").style.display= "none";
+    document.getElementById("cartel").style.display="none";
+    document.getElementById("detective_man").style.display="block";
+    document.getElementById("buttonNext18").style.display= "block";
+  ///  document.getElementById("buttonChoice21").style.display= "inline";
+  ///  document.getElementById("buttonChoice22").style.display= "inline";
+  }
+}
+
+function toggle_text_next18(next18) {
+  var span = document.getElementById(next18);
+  if(span.style.display == "none") {
+    span.style.display = "inline";
+    document.getElementById("buttonNext18").style.display= "none";
+    document.getElementById("cartel").style.display="block";
+    document.getElementById("detective_man").style.display="none";
+    document.getElementById("buttonNext20").style.display= "block";
+  ///  document.getElementById("buttonChoice21").style.display= "inline";
+  ///  document.getElementById("buttonChoice22").style.display= "inline";
+  }
+}
+
+function toggle_text_next19(next19) {
+  var span = document.getElementById(next19);
+  if(span.style.display == "none") {
+    span.style.display = "inline";
+    document.getElementById("buttonNext19").style.display= "none";
+    document.getElementById("detective_man").style.display="none";
+    document.getElementById("medical").style.display="block";
+  ///  document.getElementById("buttonNext15").style.display= "block";
+  ///  document.getElementById("buttonChoice21").style.display= "inline";
+  ///  document.getElementById("buttonChoice22").style.display= "inline";
+  }
+}
+
+function toggle_text_next20(next20) {
+  var span = document.getElementById(next20);
+  if(span.style.display == "none") {
+    span.style.display = "inline";
+    document.getElementById("buttonNext20").style.display= "none";
+    document.getElementById("cartel").style.display="none";
+    document.getElementById("suspect").style.display="block";
+    document.getElementById("answer").style.display="block";
+  ///  document.getElementById("buttonNext15").style.display= "block";
+  ///  document.getElementById("buttonChoice21").style.display= "inline";
+  ///  document.getElementById("buttonChoice22").style.display= "inline";
+  }
+}
+
+
+
 
 function timer1(){
   document.getElementById("audio1").play();
@@ -522,4 +446,70 @@ function timer5(){
   document.getElementById("buttonNext11").style.display= "inline";
 //  document.getElementById("buttonChoice11").style.display= "inline";
 //  document.getElementById("buttonChoice12").style.display= "inline";
+}
+
+function timer6(){
+  document.getElementById("audio2").pause();
+  document.getElementById("detective_man").style.display="block";
+  document.getElementById("car").style.display="none";
+  document.getElementById("choice11211").style.display="inline"
+  document.getElementById("buttonNext16").style.display= "inline";
+//  document.getElementById("buttonChoice11").style.display= "inline";
+//  document.getElementById("buttonChoice12").style.display= "inline";
+}
+
+function timer7(){
+  document.getElementById("audio2").pause();
+  document.getElementById("detective_man").style.display="block";
+  document.getElementById("car").style.display="none";
+  document.getElementById("choice11212").style.display="inline"
+  document.getElementById("buttonNext19").style.display= "inline";
+//  document.getElementById("buttonChoice11").style.display= "inline";
+//  document.getElementById("buttonChoice12").style.display= "inline";
+}
+
+function timer8(){
+  document.getElementById("medical").style.display="none";
+  document.getElementById("over").style.display="flex";
+}
+
+function timer10(){
+    document.getElementById("audio2").pause();
+    document.getElementById("audio3").play();
+}
+
+function timer11(){
+    document.getElementById("audio3").pause();
+    document.getElementById("audio4").play();
+    document.getElementById("car").style.display="none";
+    document.getElementById("boum").style.display="block";
+}
+
+function timer12(){
+    document.getElementById("audio4").pause();
+    document.getElementById("boum").style.display="none";
+    document.getElementById("over").style.display="flex";
+    document.getElementById("choice2").style.display="inline";
+}
+
+function getValue() {
+var input = document.getElementById("text_answer").value;
+if(input=="Logan"){
+  document.getElementById("win").style.display="flex";
+  document.getElementById("suspect").style.display="none";
+}
+else{
+  document.getElementById("over").style.display="flex";
+  document.getElementById("suspect").style.display="none";
+  document.getElementById("car").style.display="none";
+  document.getElementById("win").style.display="none";
+  document.getElementById("detective_man").style.display="none";
+  document.getElementById("driver").style.display="none";
+  document.getElementById("sister").style.display="none";
+  document.getElementById("cartel").style.display="none";
+  document.getElementById("butcher").style.display="none";
+  document.getElementById("medical").style.display="none";
+  document.getElementById("phone").style.display="none";
+  document.getElementById("crime_scene").style.display="none";
+}
 }

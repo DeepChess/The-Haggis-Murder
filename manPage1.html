@@ -27,6 +27,11 @@
   <img class="car" id="car" style="display:none" src="drawable/car.png" >
   <img class="driver" id="driver" style="display:none" src="drawable/driver.png" >
   <img class="sister" id="sister" style="display:none" src="drawable/sister.png" >
+  <img class="cartel" id="cartel" style="display:none" src="drawable/cartel.png" >
+  <img class="suspect" id="suspect" style="display:none" src="drawable/suspect.webp" >
+  <img class="boum" id="boum" style="display:none" src="drawable/boum.jpg" >
+  <div class="result" id="over" style="display:none">GAME OVER</div>
+  <div class="result" id="win" style="display:none">YOU WIN</div>
   </div>
   <br>
   <div class="first">
@@ -39,14 +44,17 @@
   </p>
   <br>
   <button style="display:inline;" class="buttonChoice1" id="buttonChoice1"type="button" onclick="toggle_text('choice1');">Interviewing the butcher and witnesses</button>
-  <button style="display:inline;" class="buttonChoice2" id="buttonChoice2" type="button" onclick="toggle_text2('choice2');">Go to the medical examiner</button>
+  <button style="display:inline;" class="buttonChoice2" id="buttonChoice2" type="button" onclick="toggle_text2('choice2');  setTimeout(timer10, 5000); setTimeout(timer11, 10000); setTimeout(timer12, 15000);">Go to the medical examiner</button>
   <span id="choice1" style="display:none;">John: Hello ! I am the commissioner in charge of the investigation.
   Are you the person who discovered and reported the body?</span>
-  <span id="choice2" style="display:none;">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</span>
+  <span id="choice2" style="display:none;">You have had a road accident.<br><br></span>
 
   <br><br>
 
   <audio  id="audio1" loop><source  src="raw/vibreur.mp3" type="audio/mpeg"></audio >
+  <audio  id="audio2" loop><source  src="raw/flashing_light.mp3" type="audio/mpeg"></audio >
+  <audio  id="audio3" loop><source  src="raw/skidding.mp3" type="audio/mpeg"></audio >
+  <audio  id="audio4" loop><source  src="raw/boum.mp3" type="audio/mpeg"></audio >
 
   <button style="display:none;" class="next" id="buttonNext1" onclick="toggle_text_next1('next1');" ><span>Next </span></button>
   <span id="next1" style="display:none;">Logan: Yes, I discovered the body when I was unloading the sheep carcasses that were delivered to me at around 5am. <br><br></span>
@@ -57,12 +65,10 @@
   <button style="display:none;" class="next" id="buttonNext3" onclick="toggle_text_next3('next3'); setTimeout(timer1, 2000);" ><span>Next </span></button>
   <span id="next3" style="display:none;">Logan: No, I was alone and I do not recognise this body.<br><br></span>
 
-  <audio  id="audio2" loop><source  src="raw/flashing_light.mp3" type="audio/mpeg"></audio >
-
   <button style="display:none;" class="buttonChoice1" id="buttonChoice11" type="button" onclick="toggle_text11('choice11');">Answer the phone</button>
-  <button style="display:none;" class="buttonChoice2" id="buttonChoice12" type="button" onclick="toggle_text12('choice12');">Do not answer the phone</button>
+  <button style="display:none;" class="buttonChoice2" id="buttonChoice12" type="button" onclick="toggle_text12('choice2'); setTimeout(timer10, 5000); setTimeout(timer11, 10000); setTimeout(timer12, 15000);">Do not answer the phone</button>
   <span id="choice11" style="display:none;">Nora: Hey John! I have discovered several clues. Meet me at the morgue as soon as possible.<br><br></span>
-  <span id="choice12" style="display:none;">GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG</span>
+
 
   <button style="display:none;" class="next" id="buttonNext4" onclick="toggle_text_next4('next4'); setTimeout(timer2, 2000);" ><span>Next </span></button>
   <span id="next4" style="display:none;">John: Hi Nora, what did you find out?<br><br></span>
@@ -71,15 +77,8 @@
   <span id="next5" style="display:none;">Nora: He is a man between 40 and 50 years old and has been dead for 5-6 days.
    The crime was bloody, there are signs of strangulation with a chain and I counted 12 stabs with a large blade.<br><br></span>
 
-  <button style="display:none;" class="buttonChoice1" id="buttonChoice21" type="button" onclick="toggle_text21('choice21');">       21       </button>
-  <button style="display:none;" class="buttonChoice2" id="buttonChoice22" type="button" onclick="toggle_text22('choice22');">        22       </button>
-  <span id="choice21" style="display:none;">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</span>
-  <span id="choice22" style="display:none;">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</span>
-
-
-  <button style="display:none;" class="buttonChoice1" id="buttonChoice111" type="button" onclick="toggle_text111('choice111');">Return to the butcher</button>
+  <button style="display:none;" class="buttonChoice1" id="buttonChoice111" type="button" onclick="toggle_text111('choice2'); setTimeout(timer10, 5000); setTimeout(timer11, 10000); setTimeout(timer12, 15000);">Return to the butcher</button>
   <button style="display:none;" class="buttonChoice2" id="buttonChoice112" type="button" onclick="toggle_text112('choice112');">Go to the truck driver</button>
-  <span id="choice111" style="display:none;">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</span>
   <span id="choice112" style="display:none;">John: Thank you Nora for all this information,
   I will go and question the driver of the truck that delivered the butcher. Bye. <br><br></span>
 
@@ -95,37 +94,12 @@
   <button style="display:none;" class="next" id="buttonNext9" onclick="toggle_text_next9('next9'); setTimeout(timer4, 2000);" ><span>Next </span></button>
   <span id="next9" style="display:none;">Lewis: When I loaded and unloaded the sheep carcasses from the truck, there were 12 and 0 human bodies.<br><br></span>
 
-
-
-  <button style="display:none;" class="buttonChoice1" id="buttonChoice121" type="button" onclick="toggle_text121('choice121');">        121     </button>
-  <button style="display:none;" class="buttonChoice2" id="buttonChoice122" type="button" onclick="toggle_text122('choice122');">        122     </button>
-  <span id="choice121" style="display:none;">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</span>
-  <span id="choice122" style="display:none;">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</span>
-
-  <button style="display:none;" class="buttonChoice1" id="buttonChoice211" type="button" onclick="toggle_text211('choice211');">        211       </button>
-  <button style="display:none;" class="buttonChoice2" id="buttonChoice212" type="button" onclick="toggle_text212('choice212');">          212       </button>
-  <span id="choice211" style="display:none;">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</span>
-  <span id="choice212" style="display:none;">DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD</span>
-
-  <button style="display:none;" class="buttonChoice1" id="buttonChoice221" type="button" onclick="toggle_text221('choice221');">       221       </button>
-  <button style="display:none;" class="buttonChoice2" id="buttonChoice222" type="button" onclick="toggle_text222('choice222');">       222       </button>
-  <span id="choice221" style="display:none;">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</span>
-  <span id="choice222" style="display:none;">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</span>
-
-  <br><br><br>
-
-  <button style="display:none;" class="buttonChoice1" id="buttonChoice1111" type="button" onclick="toggle_text1111('choice1111');">          1111      </button>
-  <button style="display:none;" class="buttonChoice2" id="buttonChoice1112" type="button" onclick="toggle_text1112('choice1112');">           1112</button>
-  <span id="choice1111" style="display:none;">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</span>
-  <span id="choice1112" style="display:none;">DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD</span>
-
   <button style="display:none;" class="buttonChoice1" id="buttonChoice1121" type="button" onclick="toggle_text1121('choice1121');">Answer the phone</button>
-  <button style="display:none;" class="buttonChoice2" id="buttonChoice1122" type="button" onclick="toggle_text1122('choice1122');">Do not answer the phone</button>
+  <button style="display:none;" class="buttonChoice2" id="buttonChoice1122" type="button" onclick="toggle_text1122('choice2'); setTimeout(timer10, 5000); setTimeout(timer11, 10000); setTimeout(timer12, 15000);">Do not answer the phone</button>
   <span id="choice1121" style="display:none;">Nora: I managed to get the fingerprints, and I was able to determine that the dead man was a former drug dealer known to our services as Archibald.
   He still has a sister whom you can go and interview. <br><br></span>
-  <span id="choice1122" style="display:none;">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</span>
 
-  <button style="display:none;" class="next" id="buttonNext10" onclick="toggle_text_next10('next10'); setTimeout(timer5, 1000);" ><span>Next </span></button>
+  <button style="display:none;" class="next" id="buttonNext10" onclick="toggle_text_next10('next10'); setTimeout(timer5, 5000);" ><span>Next </span></button>
   <span id="next10" style="display:none;">John: Hi, are you Archibald s sister? I have a few questions for you.<br><br></span>
 
   <button style="display:none;" class="next" id="buttonNext11" onclick="toggle_text_next11('next11');" ><span>Next </span></button>
@@ -135,38 +109,43 @@
   <span id="next12" style="display:none;">John: Stop!!! Your brother is dead. He was murdered.<br><br></span>
 
   <button style="display:none;" class="next" id="buttonNext13" onclick="toggle_text_next13('next13');" ><span>Next </span></button>
-  <span id="next13" style="display:none;">Beth: Yes, but I do not want to answer your questions, you are not welcome here.<br><br></span>
+  <span id="next13" style="display:none;">Beth: What? Was he murdered? How and by whom?<br><br></span>
 
-  <button style="display:none;" class="buttonChoice1" id="buttonChoice1211" type="button" onclick="toggle_text1211('choice1211');">          1211       </button>
-  <button style="display:none;" class="buttonChoice2" id="buttonChoice1212" type="button" onclick="toggle_text1212('choice1212');">          1212       </button>
-  <span id="choice1211" style="display:none;">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</span>
-  <span id="choice1212" style="display:none;">DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD</span>
+  <button style="display:none;" class="next" id="buttonNext14" onclick="toggle_text_next14('next14');" ><span>Next </span></button>
+  <span id="next14" style="display:none;">John: These are the questions I came to ask. What do you know? Did he have any enemies?<br><br></span>
 
-  <button style="display:none;" class="buttonChoice1" id="buttonChoice1221" type="button" onclick="toggle_text1221('choice1221');">          1221       </button>
-  <button style="display:none;" class="buttonChoice2" id="buttonChoice1222" type="button" onclick="toggle_text1222('choice1222');">           1222     </button>
-  <span id="choice1221" style="display:none;">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</span>
-  <span id="choice1222" style="display:none;">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</span>
+  <button style="display:none;" class="next" id="buttonNext15" onclick="toggle_text_next15('next15');" ><span>Next </span></button>
+  <span id="next15" style="display:none;">Beth: No, I am surprised he was murdered and did not die of an overdose.
+   He had no enemies, he had many satisfied customers.<br><br></span>
 
+   <button style="display:none;" class="buttonChoice1" id="buttonChoice11211" type="button" onclick="toggle_text11211('choice11211'); setTimeout(timer6, 5000);">Go to the opposing cartel</button>
+   <span id="choice11211" style="display:none;">John: Hi, Don Maclean. What do you have to do with Archibald s murder?<br><br></span>
 
-  <button style="display:none;" class="buttonChoice1" id="buttonChoice2111" type="button" onclick="toggle_text2111('choice2111');">       2111       </button>
-  <button style="display:none;" class="buttonChoice2" id="buttonChoice2112" type="button" onclick="toggle_text2112('choice2112');">         2112      </button>
-  <span id="choice2111" style="display:none;">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</span>
-  <span id="choice2112" style="display:none;">DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD</span>
+   <button style="display:none;" class="next" id="buttonNext16" onclick="toggle_text_next16('next16');" ><span>Next </span></button>
+   <span id="next16" style="display:none;">Don Maclean: Sir John, how are you?
+   I am sorry to disappoint you, but I had nothing to do with Archibald s death.<br><br></span>
 
-  <button style="display:none;" class="buttonChoice1" id="buttonChoice2121" type="button" onclick="toggle_text2121('choice2121');">        2121      </button>
-  <button style="display:none;" class="buttonChoice2" id="buttonChoice2122" type="button" onclick="toggle_text2122('choice2122');">         2122       </button>
-  <span id="choice2121" style="display:none;">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</span>
-  <span id="choice2122" style="display:none;">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</span>
+   <button style="display:none;" class="next" id="buttonNext17" onclick="toggle_text_next17('next17');" ><span>Next </span></button>
+   <span id="next17" style="display:none;">John:  We know you were enemies, so do not make me believe otherwise.<br><br></span>
 
-  <button style="display:none;" class="buttonChoice1" id="buttonChoice2211" type="button" onclick="toggle_text2211('choice2211');">          2211         </button>
-  <button style="display:none;" class="buttonChoice2" id="buttonChoice2212" type="button" onclick="toggle_text2212('choice2212');">         2212      </button>
-  <span id="choice2211" style="display:none;">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</span>
-  <span id="choice2212" style="display:none;">DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD</span>
+   <button style="display:none;" class="next" id="buttonNext18" onclick="toggle_text_next18('next18');" ><span>Next </span></button>
+   <span id="next18" style="display:none;">Don Maclean: We each had our own territories, I never had a problem with him.
+   He was the only one who was correct with all the drug traffickers.<br><br></span>
 
-  <button style="display:none;" class="buttonChoice1" id="buttonChoice2221" type="button" onclick="toggle_text2221('choice2221');">        2221      </button>
-  <button style="display:none;" class="buttonChoice2" id="buttonChoice2222" type="button" onclick="toggle_text2222('choice2222');">           2222      </button>
-  <span id="choice2221" style="display:none;">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</span>
-  <span id="choice2222" style="display:none;">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</span>
+   <button style="display:none;" class="next" id="buttonNext20" onclick="toggle_text_next20('next20');" ><span>Next </span></button>
+   <span id="next20" style="display:none;">Who do you want to stop?<br><br></span>
+
+   <button style="display:none;" class="buttonChoice2" id="buttonChoice11212" type="button" onclick="toggle_text11212('choice11212'); setTimeout(timer7, 5000);">Go to the medical examiner</button>
+   <span id="choice11212" style="display:none;">John: Hi Nora, do you have any new items for me?<br><br></span>
+
+   <button style="display:none;" class="next" id="buttonNext19" onclick="toggle_text_next19('next19'); setTimeout(timer8, 2000);" ><span>Next </span></button>
+   <span id="next19" style="display:none;">Nora:  What are you doing here? The suspects will flee.
+   I would have called you if I had any new information for you.<br><br></span>
+
+  <div class="answer" id="answer" style="display:none">
+  <input type="text" class="text_answer" id="text_answer" placeholder="Answer">
+  <button type="button" onclick="getValue();">Check</button>
+  <div>
 
   </div>
 
