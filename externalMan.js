@@ -147,7 +147,7 @@ function toggle_text_next3(next3) {
 }
 
 function toggle_text_next4(next4) {
-var span = document.getElementById(next4);
+  var span = document.getElementById(next4);
   if(span.style.display == "none") {
     document.getElementById("audio2").play();
     document.getElementById("buttonNext4").style.display= "none";
@@ -211,7 +211,7 @@ function toggle_text_next9(next9) {
 }
 
 function toggle_text_next10(next10) {
-var span = document.getElementById(next10);
+  var span = document.getElementById(next10);
   if(span.style.display == "none") {
     document.getElementById("audio2").play();
     document.getElementById("buttonNext10").style.display= "none";
@@ -395,81 +395,81 @@ function timer8(){
 }
 
 function timer10(){
-    document.getElementById("audio2").pause();
-    document.getElementById("audio3").play();
+  document.getElementById("audio2").pause();
+  document.getElementById("audio3").play();
 }
 
 function timer11(){
-    document.getElementById("audio3").pause();
-    document.getElementById("audio4").play();
-    document.getElementById("car").style.display="none";
-    document.getElementById("boum").style.display="block";
+  document.getElementById("audio3").pause();
+  document.getElementById("audio4").play();
+  document.getElementById("car").style.display="none";
+  document.getElementById("boum").style.display="block";
 }
 
 function timer12(){
-    document.getElementById("audio4").pause();
-    document.getElementById("boum").style.display="none";
-    document.getElementById("over").style.display="flex";
-    document.getElementById("choice2").style.display="inline";
-    document.getElementById("homePage").style.display="inline";
+  document.getElementById("audio4").pause();
+  document.getElementById("boum").style.display="none";
+  document.getElementById("over").style.display="flex";
+  document.getElementById("choice2").style.display="inline";
+  document.getElementById("homePage").style.display="inline";
 }
 
 function getValue() {
-var input = document.getElementById("text_answer").value;
-if(input=="Logan"){
-  document.getElementById("win").style.display="flex";
-  document.getElementById("suspect").style.display="none";
-  document.getElementById("answer").style.display="none";
-  document.getElementById("homePage").style.display="inline";
-  document.getElementById("file").value="100";
-  document.getElementById("textProgress").innerHTML="100%";
-}
-else{
-  document.getElementById("over").style.display="flex";
-  document.getElementById("answer").style.display="none";
-  document.getElementById("suspect").style.display="none";
-  document.getElementById("car").style.display="none";
-  document.getElementById("win").style.display="none";
-  document.getElementById("detective_man").style.display="none";
-  document.getElementById("driver").style.display="none";
-  document.getElementById("sister").style.display="none";
-  document.getElementById("cartel").style.display="none";
-  document.getElementById("butcher").style.display="none";
-  document.getElementById("medical").style.display="none";
-  document.getElementById("phone").style.display="none";
-  document.getElementById("crime_scene").style.display="none";
-  document.getElementById("homePage").style.display="inline";
-}
+  var input = document.getElementById("text_answer").value;
+  if(input=="Logan"){
+    document.getElementById("win").style.display="flex";
+    document.getElementById("suspect").style.display="none";
+    document.getElementById("answer").style.display="none";
+    document.getElementById("homePage").style.display="inline";
+    document.getElementById("file").value="100";
+    document.getElementById("textProgress").innerHTML="100%";
+  }
+  else{
+    document.getElementById("over").style.display="flex";
+    document.getElementById("answer").style.display="none";
+    document.getElementById("suspect").style.display="none";
+    document.getElementById("car").style.display="none";
+    document.getElementById("win").style.display="none";
+    document.getElementById("detective_man").style.display="none";
+    document.getElementById("driver").style.display="none";
+    document.getElementById("sister").style.display="none";
+    document.getElementById("cartel").style.display="none";
+    document.getElementById("butcher").style.display="none";
+    document.getElementById("medical").style.display="none";
+    document.getElementById("phone").style.display="none";
+    document.getElementById("crime_scene").style.display="none";
+    document.getElementById("homePage").style.display="inline";
+  }
 }
 
 function fullScreen(_element) {
-      var monElement = _element||document.documentElement;
-      if (document.mozFullScreenEnabled) {
-	if (!document.mozFullScreenElement) {
-          monElement.mozRequestFullScreen();
-        } else {
-          document.mozCancelFullScreen();
-        }
-      }
-      if (document.fullscreenElement) {
-	if (!document.fullscreenElement) {
-          monElement.requestFullscreen();
-        } else {
-          document.exitFullscreen();
-        }
-      }
-      if (document.webkitFullscreenEnabled) {
-	if (!document.webkitFullscreenElement) {
-          monElement.webkitRequestFullscreen();
-        } else {
-          document.webkitExitFullscreen();
-        }
-      }
-      if (document.msFullscreenEnabled) {
-	if (!document.msFullscreenElement) {
-          monElement.msRequestFullscreen();
-        } else {
-          document.msExitFullscreen();
-        }
-      }
+  var monElement = _element||document.documentElement;
+  if (document.mozFullScreenEnabled) {
+    if (!document.mozFullScreenElement) {
+      monElement.mozRequestFullScreen();
+    } else {
+      document.mozCancelFullScreen();
     }
+  }
+  if (document.fullscreenElement) {
+    if (!document.fullscreenElement) {
+      monElement.requestFullscreen();
+    } else {
+      document.exitFullscreen();
+    }
+  }
+  if (document.webkitFullscreenEnabled) {
+    if (!document.webkitFullscreenElement) {
+      monElement.webkitRequestFullscreen();
+    } else {
+      document.webkitExitFullscreen();
+    }
+  }
+  if (document.msFullscreenEnabled) {
+    if (!document.msFullscreenElement) {
+      monElement.msRequestFullscreen();
+    } else {
+      document.msExitFullscreen();
+    }
+  }
+}
