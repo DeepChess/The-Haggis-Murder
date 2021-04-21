@@ -322,3 +322,27 @@ div:after{
     -webkit-transform: translate(-22px,5px) skew(21deg);
   }
 }
+
+.buttonHome {
+  display: inline-block;
+  float: left;
+  margin-left: 450px;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #FFFFFF;
+  background-color: red;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.buttonHome:hover {background-color: #bfad36}
+.buttonHome:active {
+  background-color: #bfad36;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

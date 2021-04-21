@@ -4,8 +4,8 @@ function toggle_text(choice1) {
     span.style.display = "inline";
     document.getElementById("buttonChoice1").style.display= "none";
     document.getElementById("buttonChoice2").style.display= "none";
-    document.getElementById("file").value="80";
-    document.getElementById("textProgress").innerHTML="80%";
+    document.getElementById("file").value="10";
+    document.getElementById("textProgress").innerHTML="10%";
     document.getElementById("crime_scene").style.display="none";
     document.getElementById("detective_man").style.display="block";
     document.getElementById("buttonNext1").style.display= "inline";
@@ -16,9 +16,14 @@ function toggle_text(choice1) {
 function toggle_text2(choice2) {
   var span = document.getElementById(choice2);
   if(span.style.display == "none") {
-    span.style.display = "inline";
     document.getElementById("buttonChoice1").style.display= "none";
     document.getElementById("buttonChoice2").style.display= "none";
+    document.getElementById("buttonChoice11").style.display= "none";
+    document.getElementById("buttonChoice12").style.display= "none";
+    document.getElementById("buttonChoice111").style.display= "none";
+    document.getElementById("buttonChoice112").style.display= "none";
+    document.getElementById("buttonChoice1121").style.display= "none";
+    document.getElementById("buttonChoice1122").style.display= "none";
     document.getElementById("audio2").play();
     document.getElementById("car").style.display="block";
     document.getElementById("suspect").style.display="none";
@@ -31,6 +36,7 @@ function toggle_text2(choice2) {
     document.getElementById("medical").style.display="none";
     document.getElementById("phone").style.display="none";
     document.getElementById("crime_scene").style.display="none";
+    document.getElementById("homePage").style.display="inline";
   }
 }
 
@@ -40,47 +46,13 @@ function toggle_text11(choice11) {
     span.style.display = "inline";
     document.getElementById("buttonChoice11").style.display= "none";
     document.getElementById("buttonChoice12").style.display= "none";
-//    document.getElementById("buttonChoice111").style.display= "inline";
-  //  document.getElementById("buttonChoice112").style.display= "inline";
+    document.getElementById("file").value="30";
+    document.getElementById("textProgress").innerHTML="30%";
     document.getElementById("phone").style.display="none";
     document.getElementById("audio1").pause();
     document.getElementById("medical").style.display="block";
     document.getElementById("buttonNext4").style.display="inline";
 
-  }
-}
-
-function toggle_text12(choice12) {
-  var span = document.getElementById(choice12);
-  if(span.style.display == "none") {
-    span.style.display = "inline";
-    document.getElementById("buttonChoice11").style.display= "none";
-    document.getElementById("buttonChoice12").style.display= "none";
-    document.getElementById("buttonChoice121").style.display= "inline";
-    document.getElementById("buttonChoice122").style.display= "inline";
-  }
-}
-
-function toggle_text22(choice22) {
-  var span = document.getElementById(choice22);
-  if(span.style.display == "none") {
-    span.style.display = "inline";
-    document.getElementById("buttonChoice21").style.display= "none";
-    document.getElementById("buttonChoice22").style.display= "none";
-    document.getElementById("buttonChoice221").style.display= "inline";
-    document.getElementById("buttonChoice222").style.display= "inline";
-  }
-}
-
-
-function toggle_text111(choice111) {
-  var span = document.getElementById(choice111);
-  if(span.style.display == "none") {
-    span.style.display = "inline";
-    document.getElementById("buttonChoice111").style.display= "none";
-    document.getElementById("buttonChoice112").style.display= "none";
-    document.getElementById("buttonChoice1111").style.display= "inline";
-    document.getElementById("buttonChoice1112").style.display= "inline";
   }
 }
 
@@ -93,8 +65,8 @@ function toggle_text112(choice112) {
     document.getElementById("detective_man").style.display="block";
     document.getElementById("medical").style.display="none";
     document.getElementById("buttonNext6").style.display="inline";
-  //  document.getElementById("buttonChoice1121").style.display= "inline";
-  //  document.getElementById("buttonChoice1122").style.display= "inline";
+    document.getElementById("file").value="50";
+    document.getElementById("textProgress").innerHTML="50%";
 
   }
 }
@@ -110,19 +82,8 @@ function toggle_text1121(choice1121) {
     document.getElementById("audio1").pause();
     document.getElementById("medical").style.display="block";
     document.getElementById("buttonNext10").style.display="inline";
-  ///  document.getElementById("buttonChoice21").style.display= "inline";
-  ///  document.getElementById("buttonChoice22").style.display= "inline";
-  }
-}
-
-function toggle_text1122(choice1122) {
-  var span = document.getElementById(choice1122);
-  if(span.style.display == "none") {
-    span.style.display = "inline";
-    document.getElementById("buttonChoice1121").style.display= "none";
-    document.getElementById("buttonChoice1122").style.display= "none";
-  ///  document.getElementById("buttonChoice21").style.display= "inline";
-  ///  document.getElementById("buttonChoice22").style.display= "inline";
+    document.getElementById("file").value="70";
+    document.getElementById("textProgress").innerHTML="70%";
   }
 }
 
@@ -134,6 +95,8 @@ function toggle_text11211(choice11211) {
     document.getElementById("sister").style.display="none";
     document.getElementById("buttonChoice11211").style.display= "none";
     document.getElementById("buttonChoice11212").style.display= "none";
+    document.getElementById("file").value="90";
+    document.getElementById("textProgress").innerHTML="90%";
   }
 }
 
@@ -146,8 +109,6 @@ function toggle_text11212(choice11212) {
     document.getElementById("buttonChoice11211").style.display= "none";
     document.getElementById("buttonChoice11212").style.display= "none";
 
-  ///  document.getElementById("buttonChoice21").style.display= "inline";
-  ///  document.getElementById("buttonChoice22").style.display= "inline";
   }
 }
 
@@ -182,8 +143,6 @@ function toggle_text_next3(next3) {
     document.getElementById("buttonNext3").style.display= "none";
     document.getElementById("butcher").style.display="block";
     document.getElementById("detective_man").style.display="none";
-  ///  document.getElementById("buttonChoice21").style.display= "inline";
-  ///  document.getElementById("buttonChoice22").style.display= "inline";
   }
 }
 
@@ -194,9 +153,6 @@ var span = document.getElementById(next4);
     document.getElementById("buttonNext4").style.display= "none";
     document.getElementById("car").style.display="block";
     document.getElementById("medical").style.display="none";
-
-  ///  document.getElementById("buttonChoice21").style.display= "inline";
-  ///  document.getElementById("buttonChoice22").style.display= "inline";
   }
 }
 
@@ -219,8 +175,6 @@ function toggle_text_next6(next6) {
     document.getElementById("buttonNext6").style.display= "none";
     document.getElementById("car").style.display="block";
     document.getElementById("detective_man").style.display="none";
-  //  document.getElementById("buttonChoice111").style.display= "inline";
-  //  document.getElementById("buttonChoice112").style.display= "inline";
   }
 }
 
@@ -263,9 +217,6 @@ var span = document.getElementById(next10);
     document.getElementById("buttonNext10").style.display= "none";
     document.getElementById("car").style.display="block";
     document.getElementById("medical").style.display="none";
-
-  ///  document.getElementById("buttonChoice21").style.display= "inline";
-  ///  document.getElementById("buttonChoice22").style.display= "inline";
   }
 }
 
@@ -277,8 +228,6 @@ function toggle_text_next11(next11) {
     document.getElementById("sister").style.display="block";
     document.getElementById("detective_man").style.display="none";
     document.getElementById("buttonNext12").style.display= "block";
-  ///  document.getElementById("buttonChoice21").style.display= "inline";
-  ///  document.getElementById("buttonChoice22").style.display= "inline";
   }
 }
 
@@ -290,8 +239,6 @@ function toggle_text_next12(next12) {
     document.getElementById("sister").style.display="none";
     document.getElementById("detective_man").style.display="block";
     document.getElementById("buttonNext13").style.display= "block";
-  ///  document.getElementById("buttonChoice21").style.display= "inline";
-  ///  document.getElementById("buttonChoice22").style.display= "inline";
   }
 }
 
@@ -303,8 +250,6 @@ function toggle_text_next13(next13) {
     document.getElementById("sister").style.display="block";
     document.getElementById("detective_man").style.display="none";
     document.getElementById("buttonNext14").style.display= "block";
-  ///  document.getElementById("buttonChoice21").style.display= "inline";
-  ///  document.getElementById("buttonChoice22").style.display= "inline";
   }
 }
 
@@ -316,8 +261,6 @@ function toggle_text_next14(next14) {
     document.getElementById("sister").style.display="none";
     document.getElementById("detective_man").style.display="block";
     document.getElementById("buttonNext15").style.display= "block";
-  ///  document.getElementById("buttonChoice21").style.display= "inline";
-  ///  document.getElementById("buttonChoice22").style.display= "inline";
   }
 }
 
@@ -341,8 +284,6 @@ function toggle_text_next16(next16) {
     document.getElementById("cartel").style.display="block";
     document.getElementById("detective_man").style.display="none";
     document.getElementById("buttonNext17").style.display= "block";
-  ///  document.getElementById("buttonChoice21").style.display= "inline";
-  ///  document.getElementById("buttonChoice22").style.display= "inline";
   }
 }
 
@@ -354,8 +295,6 @@ function toggle_text_next17(next17) {
     document.getElementById("cartel").style.display="none";
     document.getElementById("detective_man").style.display="block";
     document.getElementById("buttonNext18").style.display= "block";
-  ///  document.getElementById("buttonChoice21").style.display= "inline";
-  ///  document.getElementById("buttonChoice22").style.display= "inline";
   }
 }
 
@@ -367,8 +306,6 @@ function toggle_text_next18(next18) {
     document.getElementById("cartel").style.display="block";
     document.getElementById("detective_man").style.display="none";
     document.getElementById("buttonNext20").style.display= "block";
-  ///  document.getElementById("buttonChoice21").style.display= "inline";
-  ///  document.getElementById("buttonChoice22").style.display= "inline";
   }
 }
 
@@ -379,9 +316,6 @@ function toggle_text_next19(next19) {
     document.getElementById("buttonNext19").style.display= "none";
     document.getElementById("detective_man").style.display="none";
     document.getElementById("medical").style.display="block";
-  ///  document.getElementById("buttonNext15").style.display= "block";
-  ///  document.getElementById("buttonChoice21").style.display= "inline";
-  ///  document.getElementById("buttonChoice22").style.display= "inline";
   }
 }
 
@@ -393,9 +327,6 @@ function toggle_text_next20(next20) {
     document.getElementById("cartel").style.display="none";
     document.getElementById("suspect").style.display="block";
     document.getElementById("answer").style.display="block";
-  ///  document.getElementById("buttonNext15").style.display= "block";
-  ///  document.getElementById("buttonChoice21").style.display= "inline";
-  ///  document.getElementById("buttonChoice22").style.display= "inline";
   }
 }
 
@@ -416,8 +347,6 @@ function timer2(){
   document.getElementById("car").style.display="none";
   document.getElementById("next4").style.display="inline"
   document.getElementById("buttonNext5").style.display= "inline";
-//  document.getElementById("buttonChoice11").style.display= "inline";
-//  document.getElementById("buttonChoice12").style.display= "inline";
 }
 
 function timer3(){
@@ -426,8 +355,6 @@ function timer3(){
   document.getElementById("car").style.display="none";
   document.getElementById("next6").style.display="inline"
   document.getElementById("buttonNext7").style.display= "inline";
-//  document.getElementById("buttonChoice11").style.display= "inline";
-//  document.getElementById("buttonChoice12").style.display= "inline";
 }
 
 function timer4(){
@@ -444,8 +371,6 @@ function timer5(){
   document.getElementById("car").style.display="none";
   document.getElementById("next10").style.display="inline"
   document.getElementById("buttonNext11").style.display= "inline";
-//  document.getElementById("buttonChoice11").style.display= "inline";
-//  document.getElementById("buttonChoice12").style.display= "inline";
 }
 
 function timer6(){
@@ -454,8 +379,6 @@ function timer6(){
   document.getElementById("car").style.display="none";
   document.getElementById("choice11211").style.display="inline"
   document.getElementById("buttonNext16").style.display= "inline";
-//  document.getElementById("buttonChoice11").style.display= "inline";
-//  document.getElementById("buttonChoice12").style.display= "inline";
 }
 
 function timer7(){
@@ -464,8 +387,6 @@ function timer7(){
   document.getElementById("car").style.display="none";
   document.getElementById("choice11212").style.display="inline"
   document.getElementById("buttonNext19").style.display= "inline";
-//  document.getElementById("buttonChoice11").style.display= "inline";
-//  document.getElementById("buttonChoice12").style.display= "inline";
 }
 
 function timer8(){
@@ -490,6 +411,7 @@ function timer12(){
     document.getElementById("boum").style.display="none";
     document.getElementById("over").style.display="flex";
     document.getElementById("choice2").style.display="inline";
+    document.getElementById("homePage").style.display="inline";
 }
 
 function getValue() {
@@ -497,9 +419,12 @@ var input = document.getElementById("text_answer").value;
 if(input=="Logan"){
   document.getElementById("win").style.display="flex";
   document.getElementById("suspect").style.display="none";
+  document.getElementById("answer").style.display="none";
+  document.getElementById("homePage").style.display="inline";
 }
 else{
   document.getElementById("over").style.display="flex";
+  document.getElementById("answer").style.display="none";
   document.getElementById("suspect").style.display="none";
   document.getElementById("car").style.display="none";
   document.getElementById("win").style.display="none";
@@ -511,5 +436,6 @@ else{
   document.getElementById("medical").style.display="none";
   document.getElementById("phone").style.display="none";
   document.getElementById("crime_scene").style.display="none";
+  document.getElementById("homePage").style.display="inline";
 }
 }

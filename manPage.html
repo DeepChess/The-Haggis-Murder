@@ -46,10 +46,8 @@
   <button style="display:inline;" class="buttonChoice1" id="buttonChoice1"type="button" onclick="toggle_text('choice1');">Interviewing the butcher and witnesses</button>
   <button style="display:inline;" class="buttonChoice2" id="buttonChoice2" type="button" onclick="toggle_text2('choice2');  setTimeout(timer10, 5000); setTimeout(timer11, 10000); setTimeout(timer12, 15000);">Go to the medical examiner</button>
   <span id="choice1" style="display:none;">John: Hello ! I am the commissioner in charge of the investigation.
-  Are you the person who discovered and reported the body?</span>
-  <span id="choice2" style="display:none;">You have had a road accident.<br><br></span>
+  Are you the person who discovered and reported the body?<br><br></span>
 
-  <br><br>
 
   <audio  id="audio1" loop><source  src="raw/vibreur.mp3" type="audio/mpeg"></audio >
   <audio  id="audio2" loop><source  src="raw/flashing_light.mp3" type="audio/mpeg"></audio >
@@ -66,7 +64,7 @@
   <span id="next3" style="display:none;">Logan: No, I was alone and I do not recognise this body.<br><br></span>
 
   <button style="display:none;" class="buttonChoice1" id="buttonChoice11" type="button" onclick="toggle_text11('choice11');">Answer the phone</button>
-  <button style="display:none;" class="buttonChoice2" id="buttonChoice12" type="button" onclick="toggle_text12('choice2'); setTimeout(timer10, 5000); setTimeout(timer11, 10000); setTimeout(timer12, 15000);">Do not answer the phone</button>
+  <button style="display:none;" class="buttonChoice2" id="buttonChoice12" type="button" onclick="toggle_text2('choice2'); setTimeout(timer10, 5000); setTimeout(timer11, 10000); setTimeout(timer12, 15000);">Do not answer the phone</button>
   <span id="choice11" style="display:none;">Nora: Hey John! I have discovered several clues. Meet me at the morgue as soon as possible.<br><br></span>
 
 
@@ -77,7 +75,7 @@
   <span id="next5" style="display:none;">Nora: He is a man between 40 and 50 years old and has been dead for 5-6 days.
    The crime was bloody, there are signs of strangulation with a chain and I counted 12 stabs with a large blade.<br><br></span>
 
-  <button style="display:none;" class="buttonChoice1" id="buttonChoice111" type="button" onclick="toggle_text111('choice2'); setTimeout(timer10, 5000); setTimeout(timer11, 10000); setTimeout(timer12, 15000);">Return to the butcher</button>
+  <button style="display:none;" class="buttonChoice1" id="buttonChoice111" type="button" onclick="toggle_text2('choice2'); setTimeout(timer10, 5000); setTimeout(timer11, 10000); setTimeout(timer12, 15000);">Return to the butcher</button>
   <button style="display:none;" class="buttonChoice2" id="buttonChoice112" type="button" onclick="toggle_text112('choice112');">Go to the truck driver</button>
   <span id="choice112" style="display:none;">John: Thank you Nora for all this information,
   I will go and question the driver of the truck that delivered the butcher. Bye. <br><br></span>
@@ -95,7 +93,7 @@
   <span id="next9" style="display:none;">Lewis: When I loaded and unloaded the sheep carcasses from the truck, there were 12 and 0 human bodies.<br><br></span>
 
   <button style="display:none;" class="buttonChoice1" id="buttonChoice1121" type="button" onclick="toggle_text1121('choice1121');">Answer the phone</button>
-  <button style="display:none;" class="buttonChoice2" id="buttonChoice1122" type="button" onclick="toggle_text1122('choice2'); setTimeout(timer10, 5000); setTimeout(timer11, 10000); setTimeout(timer12, 15000);">Do not answer the phone</button>
+  <button style="display:none;" class="buttonChoice2" id="buttonChoice1122" type="button" onclick="toggle_text2('choice2'); setTimeout(timer10, 5000); setTimeout(timer11, 10000); setTimeout(timer12, 15000);">Do not answer the phone</button>
   <span id="choice1121" style="display:none;">Nora: I managed to get the fingerprints, and I was able to determine that the dead man was a former drug dealer known to our services as Archibald.
   He still has a sister whom you can go and interview. <br><br></span>
 
@@ -145,8 +143,11 @@
   <div class="answer" id="answer" style="display:none">
   <input type="text" class="text_answer" id="text_answer" placeholder="Answer">
   <button type="button" onclick="getValue();">Check</button>
-  <div>
+  </div>
 
+    <span id="choice2" style="display:none;">You have had a road accident.<br><br></span>
+
+  <a style="display:none" class="buttonHome" id="homePage" href="file:///C:/Users/lucas/Documents/ING3/Ecosse/Web Technologies/The Haggis Murder/main.html">Home Page</a>
   </div>
 
 
