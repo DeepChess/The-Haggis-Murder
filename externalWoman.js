@@ -421,6 +421,8 @@ if(input=="Logan"){
   document.getElementById("suspect").style.display="none";
   document.getElementById("answer").style.display="none";
   document.getElementById("homePage").style.display="inline";
+  document.getElementById("file").value="100";
+  document.getElementById("textProgress").innerHTML="100%";
 }
 else{
   document.getElementById("over").style.display="flex";

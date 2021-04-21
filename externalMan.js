@@ -421,6 +421,8 @@ if(input=="Logan"){
   document.getElementById("suspect").style.display="none";
   document.getElementById("answer").style.display="none";
   document.getElementById("homePage").style.display="inline";
+  document.getElementById("file").value="100";
+  document.getElementById("textProgress").innerHTML="100%";
 }
 else{
   document.getElementById("over").style.display="flex";
@@ -439,3 +441,35 @@ else{
   document.getElementById("homePage").style.display="inline";
 }
 }
+
+function fullScreen(_element) {
+      var monElement = _element||document.documentElement;
+      if (document.mozFullScreenEnabled) {
+	if (!document.mozFullScreenElement) {
+          monElement.mozRequestFullScreen();
+        } else {
+          document.mozCancelFullScreen();
+        }
+      }
+      if (document.fullscreenElement) {
+	if (!document.fullscreenElement) {
+          monElement.requestFullscreen();
+        } else {
+          document.exitFullscreen();
+        }
+      }
+      if (document.webkitFullscreenEnabled) {
+	if (!document.webkitFullscreenElement) {
+          monElement.webkitRequestFullscreen();
+        } else {
+          document.webkitExitFullscreen();
+        }
+      }
+      if (document.msFullscreenEnabled) {
+	if (!document.msFullscreenElement) {
+          monElement.msRequestFullscreen();
+        } else {
+          document.msExitFullscreen();
+        }
+      }
+    }

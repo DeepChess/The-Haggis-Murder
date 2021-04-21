@@ -160,6 +160,11 @@ margin-right: auto }
       width: auto; height: 350px;
   }
 
+  .settings{
+    float: right;
+      width: 20px; height: 20px;
+  }
+
     ::-webkit-scrollbar {
         display: none;
     }
