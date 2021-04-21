@@ -25,6 +25,7 @@ function toggle_text2(choice2) {
     document.getElementById("buttonChoice1121").style.display= "none";
     document.getElementById("buttonChoice1122").style.display= "none";
     document.getElementById("audio2").play();
+    document.getElementById("audio1").pause();
     document.getElementById("car").style.display="block";
     document.getElementById("suspect").style.display="none";
     document.getElementById("win").style.display="none";
