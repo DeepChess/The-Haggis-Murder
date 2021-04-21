@@ -1,0 +1,154 @@
+<!DOCTYPE  html >
+<html >
+<head >
+  <script  src="externalWoman.js"></script >
+  <link  rel="stylesheet" href="external.css" type="text/css"/>
+  <title > THE HAGGIS MURDER </title >
+  </head >
+  <body>
+  <div class="top">
+  <div class="title">
+  <h1 class="title1">The Haggis Murder</h1>
+  </div>
+  <div class="progress">
+  <progress id="file" class="text-progress" max="100" value="0" ></progress>
+  <div class="text-progress" id="textProgress">0%</div>
+  </div>
+  </div>
+  <br><br>
+
+  <div>
+  <img class="crime_scene" id="crime_scene" src="drawable/crime_scene.jpg" alt="">
+  <img class="detective_woman" id="detective_woman" style="display:none" src="drawable/detective_woman.png" >
+  <img class="butcher" id="butcher" style="display:none" src="drawable/butcher.png" >
+  <img class="medical" id="medical" style="display:none" src="drawable/medical.png" >
+  <img class="phone" id="phone" style="display:none" src="drawable/phone.png" >
+  <img class="car" id="car" style="display:none" src="drawable/car.png" >
+  <img class="driver" id="driver" style="display:none" src="drawable/driver.png" >
+  <img class="sister" id="sister" style="display:none" src="drawable/sister.png" >
+  <img class="cartel" id="cartel" style="display:none" src="drawable/cartel.png" >
+  <img class="suspect" id="suspect" style="display:none" src="drawable/suspect.webp" >
+  <img class="boum" id="boum" style="display:none" src="drawable/boum.jpg" >
+  <div class="result" id="over" style="display:none">GAME OVER</div>
+  <div class="result" id="win" style="display:none">YOU WIN</div>
+  </div>
+  <br>
+  <div class="first">
+
+  <p>
+  The major and his squad have been called to a bloody crime scene.
+  When they arrive at the scene, they are greeted by a butcher who has discovered a dead body in his truck among the carcasses of sheep.
+  While his brigade starts to collect information and to fence off the crime area.
+  The major decides ....
+  </p>
+  <br>
+  <button style="display:inline;" class="buttonChoice1" id="buttonChoice1"type="button" onclick="toggle_text('choice1');">Interviewing the butcher and witnesses</button>
+  <button style="display:inline;" class="buttonChoice2" id="buttonChoice2" type="button" onclick="toggle_text2('choice2');  setTimeout(timer10, 5000); setTimeout(timer11, 10000); setTimeout(timer12, 15000);">Go to the medical examiner</button>
+  <span id="choice1" style="display:none;">Betty: Hello ! I am the commissioner in charge of the investigation.
+  Are you the person who discovered and reported the body?<br><br></span>
+
+
+  <audio  id="audio1" loop><source  src="raw/vibreur.mp3" type="audio/mpeg"></audio >
+  <audio  id="audio2" loop><source  src="raw/flashing_light.mp3" type="audio/mpeg"></audio >
+  <audio  id="audio3" loop><source  src="raw/skidding.mp3" type="audio/mpeg"></audio >
+  <audio  id="audio4" loop><source  src="raw/boum.mp3" type="audio/mpeg"></audio >
+
+  <button style="display:none;" class="next" id="buttonNext1" onclick="toggle_text_next1('next1');" ><span>Next </span></button>
+  <span id="next1" style="display:none;">Logan: Yes, I discovered the body when I was unloading the sheep carcasses that were delivered to me at around 5am. <br><br></span>
+
+  <button style="display:none;" class="next" id="buttonNext2" onclick="toggle_text_next2('next2');" ><span>Next </span></button>
+  <span id="next2" style="display:none;">Betty: Were there other people with you when you saw the body? Do you recognise the body?<br><br></span>
+
+  <button style="display:none;" class="next" id="buttonNext3" onclick="toggle_text_next3('next3'); setTimeout(timer1, 2000);" ><span>Next </span></button>
+  <span id="next3" style="display:none;">Logan: No, I was alone and I do not recognise this body.<br><br></span>
+
+  <button style="display:none;" class="buttonChoice1" id="buttonChoice11" type="button" onclick="toggle_text11('choice11');">Answer the phone</button>
+  <button style="display:none;" class="buttonChoice2" id="buttonChoice12" type="button" onclick="toggle_text2('choice2'); setTimeout(timer10, 5000); setTimeout(timer11, 10000); setTimeout(timer12, 15000);">Do not answer the phone</button>
+  <span id="choice11" style="display:none;">Nora: Hey Betty! I have discovered several clues. Meet me at the morgue as soon as possible.<br><br></span>
+
+
+  <button style="display:none;" class="next" id="buttonNext4" onclick="toggle_text_next4('next4'); setTimeout(timer2, 2000);" ><span>Next </span></button>
+  <span id="next4" style="display:none;">Betty: Hi Nora, what did you find out?<br><br></span>
+
+  <button style="display:none;" class="next" id="buttonNext5" onclick="toggle_text_next5('next5');" ><span>Next </span></button>
+  <span id="next5" style="display:none;">Nora: He is a man between 40 and 50 years old and has been dead for 5-6 days.
+   The crime was bloody, there are signs of strangulation with a chain and I counted 12 stabs with a large blade.<br><br></span>
+
+  <button style="display:none;" class="buttonChoice1" id="buttonChoice111" type="button" onclick="toggle_text2('choice2'); setTimeout(timer10, 5000); setTimeout(timer11, 10000); setTimeout(timer12, 15000);">Return to the butcher</button>
+  <button style="display:none;" class="buttonChoice2" id="buttonChoice112" type="button" onclick="toggle_text112('choice112');">Go to the truck driver</button>
+  <span id="choice112" style="display:none;">Betty: Thank you Nora for all this information,
+  I will go and question the driver of the truck that delivered the butcher. Bye. <br><br></span>
+
+  <button style="display:none;" class="next" id="buttonNext6" onclick="toggle_text_next6('next6'); setTimeout(timer3, 1000);" ><span>Next </span></button>
+  <span id="next6" style="display:none;">Betty: Hi, did you deliver the sheep carcasses and a body to Logan s butcher shop this morning?<br><br></span>
+
+  <button style="display:none;" class="next" id="buttonNext7" onclick="toggle_text_next7('next7');" ><span>Next </span></button>
+  <span id="next7" style="display:none;">Lewis: What? Whose body?<br><br></span>
+
+  <button style="display:none;" class="next" id="buttonNext8" onclick="toggle_text_next8('next8');" ><span>Next </span></button>
+  <span id="next8" style="display:none;">Betty: Yes, there was a dead body between the sheep carcasses you delivered to Logan this morning.<br><br></span>
+
+  <button style="display:none;" class="next" id="buttonNext9" onclick="toggle_text_next9('next9'); setTimeout(timer4, 2000);" ><span>Next </span></button>
+  <span id="next9" style="display:none;">Lewis: When I loaded and unloaded the sheep carcasses from the truck, there were 12 and 0 human bodies.<br><br></span>
+
+  <button style="display:none;" class="buttonChoice1" id="buttonChoice1121" type="button" onclick="toggle_text1121('choice1121');">Answer the phone</button>
+  <button style="display:none;" class="buttonChoice2" id="buttonChoice1122" type="button" onclick="toggle_text2('choice2'); setTimeout(timer10, 5000); setTimeout(timer11, 10000); setTimeout(timer12, 15000);">Do not answer the phone</button>
+  <span id="choice1121" style="display:none;">Nora: I managed to get the fingerprints, and I was able to determine that the dead man was a former drug dealer known to our services as Archibald.
+  He still has a sister whom you can go and interview. <br><br></span>
+
+  <button style="display:none;" class="next" id="buttonNext10" onclick="toggle_text_next10('next10'); setTimeout(timer5, 5000);" ><span>Next </span></button>
+  <span id="next10" style="display:none;">Betty: Hi, are you Archibald s sister? I have a few questions for you.<br><br></span>
+
+  <button style="display:none;" class="next" id="buttonNext11" onclick="toggle_text_next11('next11');" ><span>Next </span></button>
+  <span id="next11" style="display:none;">Beth: Yes, but I do not want to answer your questions, you are not welcome here.<br><br></span>
+
+  <button style="display:none;" class="next" id="buttonNext12" onclick="toggle_text_next12('next12');" ><span>Next </span></button>
+  <span id="next12" style="display:none;">Betty: Stop!!! Your brother is dead. He was murdered.<br><br></span>
+
+  <button style="display:none;" class="next" id="buttonNext13" onclick="toggle_text_next13('next13');" ><span>Next </span></button>
+  <span id="next13" style="display:none;">Beth: What? Was he murdered? How and by whom?<br><br></span>
+
+  <button style="display:none;" class="next" id="buttonNext14" onclick="toggle_text_next14('next14');" ><span>Next </span></button>
+  <span id="next14" style="display:none;">Betty: These are the questions I came to ask. What do you know? Did he have any enemies?<br><br></span>
+
+  <button style="display:none;" class="next" id="buttonNext15" onclick="toggle_text_next15('next15');" ><span>Next </span></button>
+  <span id="next15" style="display:none;">Beth: No, I am surprised he was murdered and did not die of an overdose.
+   He had no enemies, he had many satisfied customers.<br><br></span>
+
+   <button style="display:none;" class="buttonChoice1" id="buttonChoice11211" type="button" onclick="toggle_text11211('choice11211'); setTimeout(timer6, 5000);">Go to the opposing cartel</button>
+   <span id="choice11211" style="display:none;">Betty: Hi, Don Maclean. What do you have to do with Archibald s murder?<br><br></span>
+
+   <button style="display:none;" class="next" id="buttonNext16" onclick="toggle_text_next16('next16');" ><span>Next </span></button>
+   <span id="next16" style="display:none;">Don Maclean: Sir Betty, how are you?
+   I am sorry to disappoint you, but I had nothing to do with Archibald s death.<br><br></span>
+
+   <button style="display:none;" class="next" id="buttonNext17" onclick="toggle_text_next17('next17');" ><span>Next </span></button>
+   <span id="next17" style="display:none;">Betty:  We know you were enemies, so do not make me believe otherwise.<br><br></span>
+
+   <button style="display:none;" class="next" id="buttonNext18" onclick="toggle_text_next18('next18');" ><span>Next </span></button>
+   <span id="next18" style="display:none;">Don Maclean: We each had our own territories, I never had a problem with him.
+   He was the only one who was correct with all the drug traffickers.<br><br></span>
+
+   <button style="display:none;" class="next" id="buttonNext20" onclick="toggle_text_next20('next20');" ><span>Next </span></button>
+   <span id="next20" style="display:none;">Who do you want to stop?<br><br></span>
+
+   <button style="display:none;" class="buttonChoice2" id="buttonChoice11212" type="button" onclick="toggle_text11212('choice11212'); setTimeout(timer7, 5000);">Go to the medical examiner</button>
+   <span id="choice11212" style="display:none;">Betty: Hi Nora, do you have any new items for me?<br><br></span>
+
+   <button style="display:none;" class="next" id="buttonNext19" onclick="toggle_text_next19('next19'); setTimeout(timer8, 2000);" ><span>Next </span></button>
+   <span id="next19" style="display:none;">Nora:  What are you doing here? The suspects will flee.
+   I would have called you if I had any new information for you.<br><br></span>
+
+  <div class="answer" id="answer" style="display:none">
+  <input type="text" class="text_answer" id="text_answer" placeholder="Answer">
+  <button type="button" onclick="getValue();">Check</button>
+  </div>
+
+    <span id="choice2" style="display:none;">You have had a road accident.<br><br></span>
+
+  <a style="display:none" class="buttonHome" id="homePage" href="file:///C:/Users/lucas/Documents/ING3/Ecosse/Web Technologies/The Haggis Murder/main.html">Home Page</a>
+  </div>
+
+
+  </body >
+  </html >
